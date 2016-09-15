@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="/home/sky/DEV62/workspace-opencps/html-project"> -->
+<link rel="stylesheet" type="text/css" href="/home/sky/DEV62/workspace-opencps/html-project/css/ocps.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body >
+
+<h2>Active Tabs</h2>
+<p>Click on the links below:</p>
+
+<div class="ocps-row">
+  <div class="ocps-col l1">
+    <nav class="ocps-sidenav ocps-white ocps-border">
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Color.html" class="tablink">Color</a> 
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Button.html" class="tablink" >Button</a> 
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Alert.html" class="tablink" >Alert</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Inputs.html" class="tablink" >Inputs</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Badges.html" class="tablink" >Badges</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Icons.html" class="tablink" >Icons</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Dropdown.html" class="tablink" >Dropdown</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Navigation.html" class="tablink" >Navigation</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Sidenav.html" class="tablink" >Sidenav</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Tabs.html" class="tablink" >Tabs</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Navigation.html" class="tablink" >Navigation</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Progress Bars.html" class="tablink" >Progress Bars</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Modals.html" class="tablink" >Modals</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/ToolsTip.html" class="tablink" >ToolsTip</a> 
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/List.html" class="tablink" >List</a>
+	</nav> 
+  </div>
+  <div class="ocps-col l11">
+  	<div class="ocps-container">
+     	<h2>Dropdown</h2>
+	     	<table class="ocps-table">
+				<tr>
+					<td>Hoverable Menu</td>
+					<td>
+						<div class="ocps-dropdown-hover">
+						  <button class="ocps-btn ocps-red">Button</button>
+						  <div class="ocps-dropdown-content ocps-border">
+						    <a href="#">Link 1</a>
+						    <a href="#">Link 2</a>
+						    <a href="#">Link 3</a>
+						  </div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Menu Dropdown</td>
+					<td>
+						<ul class="ocps-navbar ocps-card-2 ocps-light-grey">
+						  <li><a href="#">Home</a></li>
+						  <li><a href="#">Link 1</a></li>
+						  <li class="ocps-dropdown-hover">
+						    <a href="#">Dropdown <i class="fa fa-caret-down"></i></a>
+						    <div class="ocps-dropdown-content ocps-white ocps-card-4">
+						      <a href="#">Link 1</a>
+						      <a href="#">Link 2</a>
+						      <a href="#">Link 3</a>
+						    </div>
+						  </li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>Clickable Dropdown</td>
+					<td>
+						<div class="ocps-dropdown-click">
+						  <button onclick="myFunction()" class="ocps-btn">Button</button>
+						  <div id="Demo" class="ocps-dropdown-content ocps-card-4">
+						    <a href="#">Link 1</a>
+						    <a href="#">Link 2</a>
+						    <a href="#">Link 3</a>
+						  </div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+    </div>
+  </div>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("Demo");
+    if (x.className.indexOf("ocps-show") == -1) {
+        x.className += " ocps-show";
+    } else {
+        x.className = x.className.replace(" ocps-show", "");
+    }
+}
+</script>
+</body>

@@ -1,0 +1,23 @@
+
+
+input[type=checkbox].ocps-check,input[type=radio].ocps-radio{width:24px;height:24px;position:relative;top:6px}
+input[type=checkbox].ocps-check:checked+.ocps-validate,input[type=radio].ocps-radio:checked+.ocps-validate{color:#009688} 
+input[type=checkbox].ocps-check:disabled+.ocps-validate,input[type=radio].ocps-radio:disabled+.ocps-validate{color:#aaa}
+input[type=checkbox],input[type=radio]{padding:0}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
+input[type=search]{box-sizing:content-box;-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+
+.ocps-input-group,.ocps-group{margin-top:24px;margin-bottom:24px}
+
+.ocps-input{padding:8px;display:block;border:none;border-bottom:1px solid #808080;width:100%}
+.ocps-input:focus{outline: 0 !important}
+
+
+
+
+.ocps-select{padding:9px 0;width:100%;color:#000;border:1px solid transparent;border-bottom:1px solid #009688}
+.ocps-select select:focus{color:#000;border:1px solid #009688}.ocps-select option[disabled]{color:#009688}
+
+/*Valid*/
+.ocps-label{color:#009688}.ocps-input:not(:valid)~.ocps-validate{color:#f44336}

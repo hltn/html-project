@@ -1,0 +1,174 @@
+/* Start of general */
+
+.ocps-btn,.ocps-btn-floating,.ocps-dropnav a,.ocps-btn-floating-large,.ocps-btn-block,.ocps-hover-shadow,.ocps-hover-opacity,.ocps-hover-opacity-off,
+.ocps-navbar a,.ocps-sidenav a,.ocps-pagination li a,.ocps-hoverable tbody tr,.ocps-hoverable li,.ocps-accordion-content a,.ocps-dropdown-content a,.ocps-dropdown-click:hover,.ocps-dropdown-hover:hover,.ocps-opennav,.ocps-closenav,.ocps-closebtn,
+.ocps-hover-amber,.ocps-hover-aqua,.ocps-hover-blue,.ocps-hover-light-blue,.ocps-hover-brown,.ocps-hover-cyan,.ocps-hover-blue-grey,.ocps-hover-green,.ocps-hover-light-green,.ocps-hover-indigo,.ocps-hover-khaki,.ocps-hover-lime,.ocps-hover-orange,.ocps-hover-deep-orange,.ocps-hover-pink,
+.ocps-hover-purple,.ocps-hover-deep-purple,.ocps-hover-red,.ocps-hover-sand,.ocps-hover-teal,.ocps-hover-yellow,.ocps-hover-white,.ocps-hover-black,.ocps-hover-grey,.ocps-hover-light-grey,.ocps-hover-dark-grey,.ocps-hover-text-amber,.ocps-hover-text-aqua,.ocps-hover-text-blue,.ocps-hover-text-light-blue,
+.ocps-hover-text-brown,.ocps-hover-text-cyan,.ocps-hover-text-blue-grey,.ocps-hover-text-green,.ocps-hover-text-light-green,.ocps-hover-text-indigo,.ocps-hover-text-khaki,.ocps-hover-text-lime,.ocps-hover-text-orange,.ocps-hover-text-deep-orange,.ocps-hover-text-pink,.ocps-hover-text-purple,
+.ocps-hover-text-deep-purple,.ocps-hover-text-red,.ocps-hover-text-sand,.ocps-hover-text-teal,.ocps-hover-text-yellow,.ocps-hover-text-white,.ocps-hover-text-black,.ocps-hover-text-grey,.ocps-hover-text-light-grey,.ocps-hover-text-dark-grey
+{-webkit-transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s;transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s}
+.ocps-hover-none:hover{box-shadow:none!important;background-color:transparent!important}
+.ocps-panel{padding:0.01em 16px;margin-top:16px!important;margin-bottom:16px!important}
+
+
+
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block;vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}
+dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}sub{bottom:-0.25em}
+img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}
+hr{-moz-box-sizing:content-box;box-sizing:content-box}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}pre,textarea{overflow:auto}
+h1,h2,h3,h4,h5,h6,.ocps-slim,.ocps-wide{font-family:"Segoe UI",Arial,sans-serif}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.ocps-serif{font-family:"Times New Roman",Times,serif}
+h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.ocps-wide{letter-spacing:4px}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
+hr{height:0;border:0;border-top:1px solid #eee;margin:20px 0}
+img{margin-bottom:-5px}a{color:inherit}
+
+input[type=checkbox].ocps-check,input[type=radio].ocps-radio{width:24px;height:24px;position:relative;top:6px}
+input[type=checkbox].ocps-check:checked+.ocps-validate,input[type=radio].ocps-radio:checked+.ocps-validate{color:#009688} 
+input[type=checkbox].ocps-check:disabled+.ocps-validate,input[type=radio].ocps-radio:disabled+.ocps-validate{color:#aaa}
+input[type=checkbox],input[type=radio]{padding:0}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
+input[type=search]{box-sizing:content-box;-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+
+button,input,select,textarea{font:inherit;margin:0}
+button{overflow:visible}button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+
+@-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.ocps-animate-opacity{-webkit-animation:opac 1.5s;animation:opac 1.5s}
+@-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+.ocps-animate-top{position:relative;-webkit-animation:animatetop 0.4s;animation:animatetop 0.4s}
+@-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.ocps-animate-left{position:relative;-webkit-animation:animateleft 0.4s;animation:animateleft 0.4s}
+@-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.ocps-animate-right{position:relative;-webkit-animation:animateright 0.4s;animation:animateright 0.4s}
+@-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.ocps-animate-bottom{position:relative;-webkit-animation:animatebottom 0.4s;animation:animatebottom 0.4s}
+@-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
+@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.ocps-animate-zoom {-webkit-animation:animatezoom 0.6s;animation:animatezoom 0.6s}
+@-webkit-keyframes animatezoom{from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}}
+@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+@-webkit-keyframes w3-spin{
+0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+@keyframes w3-spin{
+0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+
+.ocps-content{max-width:980px;margin:auto}
+
+.ocps-hide{display:none!important}
+.ocps-show-block,.ocps-show{display:block!important}
+.ocps-show-inline-block{display:inline-block!important}
+.ocps-fluid{max-width:100%;height:auto}
+
+
+.ocps-responsive{overflow-x:auto}
+
+.ocps-input-group,.ocps-group{margin-top:24px;margin-bottom:24px}
+.ocps-input{padding:8px;display:block;border:none;border-bottom:1px solid #808080;width:100%}
+.ocps-label{color:#009688}.ocps-input:not(:valid)~.ocps-validate{color:#f44336}
+.ocps-select{padding:9px 0;width:100%;color:#000;border:1px solid transparent;border-bottom:1px solid #009688}
+.ocps-select select:focus{color:#000;border:1px solid #009688}.ocps-select option[disabled]{color:#009688}
+
+.ocps-accordion {width:100%;cursor:pointer}
+.ocps-accordion-content{cursor:auto;display:none;position:relative;width:100%;margin:0;padding:0}
+.ocps-accordion-content a{padding:6px 16px;display:block}.ocps-accordion-content a:hover{background-color:#ccc}
+
+.ocps-example{background-color:#f1f1f1;padding:0.01em 16px}
+.ocps-code,.ocps-codespan{font-family:Consolas,"courier new";font-size:16px}
+.ocps-code{line-height:1.4;width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #009688;word-wrap:break-word}
+.ocps-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.ocps-example,.ocps-code,.ocps-reference{margin:20px 0}
+.ocps-card{border:1px solid #ccc}
+.ocps-card-2,.ocps-example{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
+.ocps-card-4,.ocps-hover-shadow:hover{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
+.ocps-card-8{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
+.ocps-card-12{box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important}
+.ocps-card-16{box-shadow:0 16px 24px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21)!important}
+.ocps-card-24{box-shadow:0 24px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22)!important}
+
+.ocps-tooltip,.ocps-display-container{position:relative}
+.ocps-tooltip .ocps-text{display:none}
+.ocps-tooltip:hover .ocps-text{display:inline-block}
+
+.ocps-ripple{position:relative;overflow:hidden}
+.ocps-ripple:after{content:"";background:#ccc;position:absolute;padding:300%;bottom:0;left:0;opacity:0;transition:0.8s}
+.ocps-ripple:active:after{padding:0;opacity:1;transition:0s}
+
+.ocps-badge,.ocps-tag,.ocps-sign{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}
+.ocps-badge{border-radius:50%}
+
+.ocps-main,#main{transition:margin-left .4s}
+
+.ocps-container:after,.ocps-panel:after,.ocps-row:after,.ocps-row-padding:after,.ocps-topnav:after,.ocps-clear:after,.ocps-btn-group:before,.ocps-btn-group:after,.ocps-btn-bar:before,.ocps-btn-bar:after
+{content:"";display:table;clear:both}
+.ocps-container{padding:0.01em 16px}
+
+
+/* Start of list */
+ul.ocps-ul{list-style-type:none;padding:0;margin:0}
+ul.ocps-ul li{padding:6px 2px 6px 16px;border-bottom:1px solid #ddd}
+ul.ocps-ul li:last-child{border-bottom:none}
+
+/* Start of navbar */
+.ocps-navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
+.ocps-navbar li{float:left}.ocps-navbar li a,.ocps-navitem{display:block;padding:8px 16px}
+.ocps-navbar li a:hover{color:#000;background-color:#ccc}
+.ocps-navbar .ocps-dropdown-hover,.ocps-navbar .ocps-dropdown-click{position:static}
+.ocps-navbar .ocps-dropdown-hover:hover,.ocps-navbar .ocps-dropdown-hover:first-child,.ocps-navbar .ocps-dropdown-click:hover{background-color:#ccc;color:#000}
+.ocps-navbar a,.ocps-topnav a,.ocps-sidenav a,.ocps-dropdown-content a,.ocps-accordion-content a,.ocps-dropnav a{text-decoration:none!important}
+.ocps-navbar .ocps-opennav.ocps-right{float:right!important}.ocps-topnav{padding:8px 8px}
+
+
+/* Start of topva */
+.ocps-topnav a{padding:0 8px;border-bottom:3px solid transparent;-webkit-transition:border-bottom .3s;transition:border-bottom .3s}
+.ocps-topnav a:hover{border-bottom:3px solid #fff}
+.ocps-topnav .ocps-dropdown-hover a{border-bottom:0}
+
+.ocps-opennav,.ocps-closenav{color:inherit}
+.ocps-opennav:hover,.ocps-closenav:hover{cursor:pointer;opacity:0.8}
+
+/* Start of sidenav */
+.ocps-sidenav{height:100%;width:200px;background-color:#fff;position:fixed !important;z-index:1;overflow:auto}
+.ocps-sidenav a{padding:4px 2px 4px 16px}.ocps-sidenav a:hover{background-color:#ccc}.ocps-sidenav a,.ocps-dropnav a{display:block}
+.ocps-sidenav .ocps-dropdown-hover:hover,.ocps-sidenav .ocps-dropdown-hover:first-child,.ocps-sidenav .ocps-dropdown-click:hover,.ocps-dropnav a:hover{background-color:#ccc;color:#000}
+.ocps-sidenav .ocps-dropdown-hover,.ocps-sidenav .ocps-dropdown-click {width:100%}
+.ocps-sidenav .ocps-dropdown-hover .ocps-dropdown-content,.ocps-sidenav .ocps-dropdown-click .ocps-dropdown-content{min-width:100%}
+
+/* Start of modal */
+.ocps-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.ocps-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+
+/* Start of pagination */
+.ocps-pagination{display:inline-block;padding:0;margin:0}.ocps-pagination li{display:inline}
+.ocps-pagination li a{text-decoration:none;color:#000;float:left;padding:8px 16px}
+.ocps-pagination li a:hover{background-color:#ccc}
+
+/* Start of dropdown */
+.ocps-dropdown-click,.ocps-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.ocps-dropdown-hover:hover .ocps-dropdown-content{display:block;z-index:1}
+.ocps-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0}
+.ocps-dropdown-content a{padding:6px 16px;display:block}
+.ocps-dropdown-content a:hover{background-color:#ccc}
+

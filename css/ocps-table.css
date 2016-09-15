@@ -1,0 +1,12 @@
+/* Start of table*/
+
+.ocps-table,.ocps-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}
+.ocps-table-all{border:1px solid #ccc}
+.ocps-bordered tr,.ocps-table-all tr{border-bottom:1px solid #ddd}
+.ocps-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.ocps-table-all tr:nth-child(odd){background-color:#fff}
+.ocps-table-all tr:nth-child(even){background-color:#f1f1f1}
+.ocps-hoverable tbody tr:hover,.ocps-ul.ocps-hoverable li:hover{background-color:#ccc}
+.ocps-centered tr th,.ocps-centered tr td{text-align:center}
+.ocps-table td,.ocps-table th,.ocps-table-all td,.ocps-table-all th{padding:6px 8px;display:table-cell;text-align:left;vertical-align:top}
+.ocps-table th:first-child,.ocps-table td:first-child,.ocps-table-all th:first-child,.ocps-table-all td:first-child{padding-left:16px}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="/home/sky/DEV62/workspace-opencps/html-project"> -->
+<link rel="stylesheet" type="text/css" href="/home/sky/DEV62/workspace-opencps/html-project/css/ocps.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<h2>Active Tabs</h2>
+<p>Click on the links below:</p>
+
+<div class="ocps-row">
+  <div class="ocps-col l1">
+    <nav class="ocps-sidenav ocps-white ocps-border">
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Color.html" class="tablink">Color</a> 
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Button.html" class="tablink" >Button</a> 
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Alert.html" class="tablink" >Alert</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Inputs.html" class="tablink" >Inputs</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Badges.html" class="tablink" >Badges</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Icons.html" class="tablink" >Icons</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Dropdown.html" class="tablink" >Dropdown</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Navigation.html" class="tablink" >Navigation</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Sidenav.html" class="tablink" >Sidenav</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Tabs.html" class="tablink" >Tabs</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Navigation.html" class="tablink" >Navigation</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Progress Bars.html" class="tablink" >Progress Bars</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/Modals.html" class="tablink" >Modals</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/ToolsTip.html" class="tablink" >ToolsTip</a>
+	  <a href="/home/sky/DEV62/workspace-opencps/html-project/List.html" class="tablink" >List</a> 
+	</nav> 
+  </div>
+  <div class="ocps-col l11">
+  	<div class="ocps-container">
+     	<h2>Sidenav</h2>
+	     	<table class="ocps-table">
+				<tr>
+					<td>Always Display the Side Navigation</td>
+					<td>
+						<nav class="ocps-sidenav ocps-white ocps-card-2 ocps-col l1">
+						  <br>
+						  <a href="#">Link</a>
+						  <a href="#">Link</a>
+						  <a href="#">Link</a>
+						  <a href="#">Link</a>
+						  <a href="#">Link</a>
+						</nav>
+						
+						<div class="ocps-col l11">
+							<header class="ocps-container ocps-teal">
+							  <h1>My Header</h1>
+							</header>
+							
+							
+							<div class="ocps-container">
+							  <h2>Side Navigation Example</h2>
+							  <p>Note that you control the size of the sidenav with style="width:value". To change the color, change the ocps-color class.</p>
+							
+							  <p>Make sure to add the margin-left property to the page content, with a value that is equal to the width of the sidenav. If you omit this, the navigation pane will overlay/sit on top of the page content.</p>
+							</div>
+							
+							<footer class="ocps-container ocps-teal">
+							  <h5>Footer</h5>
+							  <p>Footer information goes here</p>
+							</footer>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Collapsible Responsive Sidenav</td>
+					<td>
+						<nav class="ocps-sidenav ocps-collapse ocps-white ocps-card-2 ocps-animate-left ocps-col l1" id="mySidenav">
+						  <a href="javascript:void(0)" onclick="ocps_close()""
+						  class="ocps-closenav ocps-large ocps-hide-large">Close &times;</a>
+						  <a href="#">Link 1</a>
+						  <a href="#">Link 2</a>
+						  <a href="#">Link 3</a>
+						  <a href="#">Link 4</a>
+						  <a href="#">Link 5</a>
+						</nav>
+						
+						<div class="ocps-main ocps-col l11" >
+						<header class="ocps-container ocps-teal">
+						  <span class="ocps-opennav ocps-xlarge ocps-hide-large" onclick="ocps_open()">&#9776;</span>
+						  <h2>Responsive Sidenav</h2>
+						</header>
+						
+						<div class="ocps-container">
+						  <p>In this example, the side navigation will always be displayed on desktop computers and laptops (screens wider than 992px), and hidden on tablets and mobile phones (screens that are less than 992px wide).</p>
+						  <p>On tablets and mobile phones the side navigation is replaced with a menu icon that opens the navigation pane when clicked on: it will then overlay/sit on top of the page content.</p>
+						  <p><b>Resize the browser window to understand how it works.</b></p>
+						</div>
+						
+						<footer class="ocps-container ocps-teal">
+						  <h5>Footer</h5>
+						  <p>Footer information goes here</p>
+						</footer>
+						     
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Side Navigation with Icons</td>
+					<td>
+						<nav class="ocps-sidenav ocps-black" style="float:left;margin-right:15px;position:relative !important;width:68px">
+						  <a class="ocps-padding-16" href="#"><i class="fa fa-home ocps-xxlarge"></i></a>
+						  <a class="ocps-padding-16" href="#"><i class="fa fa-search ocps-xxlarge"></i></a>
+						  <a class="ocps-padding-16" href="#"><i class="fa fa-envelope ocps-xxlarge"></i></a>
+						  <a class="ocps-padding-16" href="#"><i class="fa fa-globe ocps-xxlarge"></i></a>
+						  <a class="ocps-padding-16" href="#"><i class="fa fa-trash ocps-xxlarge"></i></a>
+						</nav>
+						
+						<nav class="ocps-sidenav ocps-green" style="float:left;margin-right:15px;position:relative !important;width:68px">
+						  <a class="ocps-padding-16" href="#"><i class="material-icons ocps-xxlarge">home</i></a>
+						  <a class="ocps-padding-16" href="#"><i class="material-icons ocps-xxlarge">search</i></a>
+						  <a class="ocps-padding-16" href="#"><i class="material-icons ocps-xxlarge">mail ouline</i></a>
+						  <a class="ocps-padding-16" href="#"><i class="material-icons ocps-xxlarge">public</i></a>
+						  <a class="ocps-padding-16" href="#"><i class="fa fa-trash ocps-xxlarge"></i></a>
+						</nav>
+						
+						
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+    </div>
+  </div>
+</div>
+<script>
+function ocps_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+function ocps_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+</body>
+

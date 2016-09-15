@@ -1,0 +1,7 @@
+/* Start of progressbar*/
+
+.ocps-progress-container{width:100%;height:1.5em;position:relative;background-color:#f1f1f1}
+.ocps-progressbar{background-color:#757575;height:100%;position:absolute;line-height:inherit}
+.ocps-progress-container .small{height:5px}
+.ocps-progress-container .medium{height:10px}
+.ocps-progress-container .large{height:15px}
