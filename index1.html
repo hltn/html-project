@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/ocps.css">
+<script src="js/main.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<body style="background-color: #e9ebee">
+	
+			
+	<nav class="ocps-sidenav ocps-collapse" style="width:73px;position: fixed!important;border-right: 1px solid #ececec;background-color: #f8f8f8;">
+		<a href="#" class="ocps-padding-16"><i class="material-icons ocps-xxlarge">home</i></a>
+		<a href="#" class="ocps-padding-16"><i class="material-icons ocps-xxlarge">account_circle</i></a>
+		<a href="#" class="ocps-padding-16"><i class="fa fa-sign-out ocps-xxlarge"></i></a>	
+	</nav>
+	
+	<div class="ocps-main" style="margin-left:73px">
+	<div>
+		<div class="ocps-row">
+			<div class="ocps-container ocps-theme">
+				<span class="ocps-opennav ocps-xlarge ocps-hide-large" onclick="ocps_open_sidenav()">&#9776;</span>
+				<a class="logo" href="index1.html"><h1>Logo</h1></a>
+			</div>
+		</div>
+		<div class="ocps-row ocps-margin-top-10">
+			<div class="ocps-col m2">
+					
+					<nav class="ocps-sidenav ocps-collapse ocps-white ocps-border ocps-animate-left" id="mySidenav">
+						
+						  <a href="javascript:void(0)" onclick="ocps_close_sidenav()" class="ocps-closenav ocps-large ocps-hide-large">Close &times;</a>
+						  
+						  <a href="#" class="ocps-padding-16 ocps-theme ocps-large"><i class="fa fa-bar-chart ocps-xlarge"></i>  So do dich vu cong</a>
+						  <div class="ocps-accordion ocps-medium">
+						    <a onclick="myFunction('submenu1')" href="#" class="sidenavlink">
+						      <span>Quản lý dịch vụ công cấp 2</span> 
+						      
+						      <span><i class="material-icons ocps-display-right">keyboard_arrow_down</i></span>
+						    </a>
+						    <div id="submenu1" class="ocps-accordion-content ocps-white ">
+						      <a href="#">Cấp quản lý</a>
+						      <a href="#">Lĩnh vực</a>
+						      <a href="#">Thủ tục hành chính</a>
+						      <a href="#">Biểu mẫu</a>
+						    </div>
+						  </div> 
+						  <div class="ocps-accordion ocps-medium">
+						    <a onclick="myFunction('submenu2')" href="#" class="sidenavlink">
+						      Quản lý dịch vụ công cấp 3 <i class="material-icons ocps-display-right">keyboard_arrow_down</i>
+						    </a>
+						    <div id="submenu2" class="ocps-accordion-content ocps-white ">
+						      <a href="#">Thủ tục</a>
+						      <a href="#">Quản lý cán bộ</a>
+						      <a href="#">Quy trình</a>
+						      <a href="#">Quan ly cong dan, to chuc</a>
+						      <a href="#">Cấu hình thanh toán</a>
+						    </div>
+						  </div>  
+						  <div class="ocps-accordion ocps-medium">
+						    <a onclick="myFunction('submenu3')" href="#" class="sidenavlink">
+						      Quản lý dữ liệu danh mục <i class="material-icons ocps-display-right">keyboard_arrow_down</i>
+						    </a>
+						    <div id="submenu3" class="ocps-accordion-content ocps-white ">
+						      <a href="#">Danh mục</a>
+						      <a href="#">Nhóm danh mục</a>						     
+						    </div>
+						  </div>  
+						  <a href="#" class="sidenavlink ocps-medium" >Văn bản pháp quy</a>
+						
+					</nav>
+			</div>
+			<div class="ocps-col m10">
+					<div class="row" style="display:none">
+						<div class="ocps-container ocps-white ocps-border ocps-margin-left-10 ocps-margin-right-10">
+							
+								<ul class="ocps-navbar " >
+								  <li><a href="#">Home</a></li>
+								  <li><a href="#">Link 1</a></li>
+								  <li class="ocps-dropdown-hover">
+								    <a href="#">Dropdown <i class="fa fa-caret-down"></i></a>
+								    <div class="ocps-dropdown-content ocps-white">
+								      <a href="#">Link 1</a>
+								      <a href="#">Link 2</a>
+								      <a href="#">Link 3</a>
+								    </div>
+								  </li>
+								</ul>
+							
+						</div>
+					</div>
+					<div class="ocps-row">
+						<div class="ocps-container ocps-white ocps-border ocps-margin-left-10 ocps-margin-right-10">
+							
+								<ul class="ocps-breadcrumb" >
+								  <li><a href="#">Home</a></li>
+								  <li><a href="#">Level1</a></li>
+								  <li><a href="#">Level2</a></li>
+								  <li>Level3</li>
+								    
+								</ul>
+							
+						</div>
+					</div>
+					<div class="ocps-row">
+							
+								<div class="ocps-container ocps-border ocps-white ocps-margin-left-10 ocps-margin-right-10 ocps-margin-top-10">
+									<h2 class="ocps-border-bottom">Cấp quản lý</h2>
+									<div class="ocps-row">
+										<a class="ocps-btn-floating ocps-theme">+</a>
+									</div>
+									<div class="ocps-responsive">
+										<table class="ocps-table ocps-striped ">
+											<tr>
+											  <td>1</td>
+											  <td>
+											  	<div>
+											  		<span>Mã cơ quan quản lý</span>
+											  		<span>BGTVT-CDS</span>
+											  		<br>
+											  		<span>Tên cơ quan quản lý</span>
+											  		<span>Cục Đường sắt Việt Nam</span>
+										  		</div>
+											  </td>
+											  
+											  <td>
+										  		<a href="#" class="ocps-btn ocps-blue ocps-margin-top-10 ocps-ripple ocps-widthfixed-40">Add</a>
+										  		<br>
+										  		<a href="#" class="ocps-btn ocps-orange ocps-margin-top-10 ocps-ripple ocps-widthfixed-40">Edit</a>
+										  		<br>
+										  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-widthfixed-40">Delete</a>
+											  </td>
+											</tr>
+											<tr>
+											  <td>2</td>
+											  <td>Smith</td>
+											  <td>50</td>
+											  
+											</tr>
+											<tr>
+											  <td>3</td>
+											  <td>Smith</td>
+											  <td>50</td>
+											  
+											</tr>
+											<tr>
+											  <td>4</td>
+											  <td>Smith</td>
+											  <td>50</td>
+											  
+											</tr>
+											<tr>
+											  <td>5</td>
+											  <td>Smith</td>
+											  <td>50</td>
+											  <td>2</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+						
+					</div>
+			</div>
+		</div>
+		<footer class="ocps-margin-top-10">
+			<div class="ocps-container ocps-theme ocps-footer-container">
+				<div class="ocps-row">
+					<div class="ocps-col m3 footer-logo ocps-margin-top">
+						<p>Copyright © 2016 - OpenCPS v1.5</p>
+					</div>
+					<div class="ocps-col m2 ocps-margin-left">
+						<div class="ocps-container"><h5>DANH MỤC</h5></div>
+						<ul class="ocps-ul">
+							<li>TRANG CHỦ</li>
+							<li>Thủ tục hành chính</li>
+							<li>Tiếp nhận hồ sơ</li>
+						</ul>
+					</div>
+					<div class="ocps-col m2 ocps-margin-left">
+						
+						<div class="ocps-container"><h5>HƯỚNG DẪN</h5></div>
+						<ul class="ocps-ul">
+							<li>Đăng kí tài khoản</li>
+							<li>Đăng nhập hệ thống</li>
+							<li>Nộp hồ sơ trực tuyến</li>
+							<li>Tra cứu kết quả</li>
+							<li>Cán bộ xử lý hồ sơ</li>
+						</ul>
+					</div>
+					<div class="ocps-col m2 ocps-margin-left">
+						
+						<div class="ocps-container"><h5>LIÊN HỆ HỖ TRỢ</h5></div>
+						<ul class="ocps-ul">
+							<li class="ocps-medium"><i class="material-icons ocps-medium">location_on</i>Tòa nhà VAPA, số 2, đường Tôn Thất Thuyết</li>
+							<li class="ocps-medium"><i class="material-icons ocps-medium">mail_outline</i>hotro@opencps.vn</li>
+							<li class="ocps-medium"><i class="material-icons ocps-medium">local_phone</i>1900 0311</li>
+						</ul>
+					</div>
+					<div class="ocps-col m2 ocps-margin-left">
+						
+						<div class="ocps-container"><h5>LIÊN KẾT WEBSITE</h5></div>
+						<select class="ocps-select ocps-border" name="option">
+						  <option value="" disabled selected>Choose your option</option>
+						  <option value="1">Option 1</option>
+						  <option value="2">Option 2</option>
+						  <option value="3">Option 3</option>
+						</select>
+					</div>
+					
+				</div>
+			</div>
+		</footer>
+		</div>
+	</div>
+</body>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html style="overflow-x:hidden;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/ocps.css">
+<script src="js/main.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<script>
+var app = angular.module("myShoppingList", []);
+app.controller("myCtrl", function($scope) {
+    $scope.products = [
+                       {level1:"Quản lý dịch vụ công cấp 2",level2:"Cấp quản lý",level2:"Lĩnh vực"},
+                       {level1:"Quản lý dịch vụ công cấp 3"},
+   						];
+});
+</script>
+
+<div ng-app="myShoppingList" ng-controller="myCtrl">
+	<nav class="ocps-sidenav ocps-collapse ocps-white ocps-border ocps-animate-left" id="mySidenav">
+		<a href="Button.html" class="tablink " ng-repeat="x in products">{{x.level1}}</a>
+		<div ng-if="" class="ocps-accordion">
+						    <a onclick="myFunction('demo1')" href="#">
+						      Quản lý dịch vụ công cấp 2 <i class="fa fa-caret-down"></i>
+						    </a>
+						    <div id="demo1" class="ocps-accordion-content ocps-white ">
+						      <a href="#">Cấp quản lý</a>
+						      <a href="#">Lĩnh vực</a>
+						      <a href="#">Thủ tục hành chính</a>
+						      <a href="#">Biểu mẫu</a>
+						    </div>
+	  	</div> 
+	</nav>
+</div>
+
+<p>So far we have made an HTML list based on the items of an array.</p>
+
+</body>
+</html>

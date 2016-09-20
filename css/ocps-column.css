@@ -12,6 +12,9 @@
 .ocps-col.s9{width:74.99999%}
 .ocps-col.s10{width:83.33333%}
 .ocps-col.s11{width:91.66666%}
+
+.ocps-col.s05{width:4.5%}
+.ocps-col.s115{width:95.5%}
 .ocps-col.s12,.ocps-half,.ocps-third,.ocps-twothird,.ocps-threequarter,.ocps-quarter{width:99.99999%}
 .ocps-rest{overflow:hidden}
 .ocps-row-padding,.ocps-row-padding>.ocps-half,.ocps-row-padding>.ocps-third,.ocps-row-padding>.ocps-twothird,.ocps-row-padding>.ocps-threequarter,.ocps-row-padding>.ocps-quarter,.ocps-row-padding>.ocps-col{padding:0 8px}

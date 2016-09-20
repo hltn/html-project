@@ -1,0 +1,68 @@
+.GIKW210P-B {
+    left: 0;
+    width: 73px;
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out 0.3s;
+}
+
+.GIKW210J0B {
+    border-right: 1px solid #ececec;
+    background-color: #f8f8f8;
+    height: 100%;
+    float: left;
+    padding: 12px 12px 24px 17px;
+    transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
+    z-index: 200;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.GIKW210K1B {
+    
+    position: relative;
+    transition: margin 0.3s ease-in-out;
+    margin-left:73px;
+    height: 100%;
+}
+
+.GIKW210K1C {
+	margin-right:15px;
+    margin-top:15px;
+    margin-left:15px;
+}
+
+
+.logo {
+    background: rgba(0,0,0,0) url("../image/logo.png") no-repeat scroll left center;
+    height: 46px;
+    padding: 38px 0;
+    width: 411px;
+}
+
+
+
+
+.footer-logo {
+    background: rgba(0,0,0,0) url("../image/logo_footer.png") no-repeat scroll 0 0/215px 57px;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 73px;
+    
+}
+
+.ocps-footer-container{
+	padding: 0.01em 200px !important;
+}
+
+
+.ink {
+	display: block; position: absolute;
+	background: hsl(180, 40%, 80%);
+	border-radius: 100%;
+	transform: scale(0);
+}
+/*animation effect*/
+.ink.animate {animation: ripple 0.65s linear;}
+@keyframes ripple {
+	/*scale the element to 250% to safely cover the entire link and fade it out*/
+	100% {opacity: 0; transform: scale(2.5);}
+}

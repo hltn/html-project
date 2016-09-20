@@ -1,0 +1,14 @@
+ul.ocps-breadcrumb {
+    list-style: none;
+    -webkit-padding-start: 20px;
+}
+ul.ocps-breadcrumb li {display: inline;}
+ul.ocps-breadcrumb li+li:before {
+    padding: 5px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.ocps-breadcrumb li a{
+	    text-decoration: none;
+}

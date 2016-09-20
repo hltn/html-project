@@ -1,0 +1,30 @@
+/* Start of navbar */
+.ocps-navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
+.ocps-navbar li{float:left}.ocps-navbar li a,.ocps-navitem{display:block;padding:8px 16px}
+.ocps-navbar li a:hover{color:#000;background-color:#ccc}
+.ocps-navbar .ocps-dropdown-hover,.ocps-navbar .ocps-dropdown-click{position:static}
+.ocps-navbar .ocps-dropdown-hover:hover,.ocps-navbar .ocps-dropdown-hover:first-child,.ocps-navbar .ocps-dropdown-click:hover{background-color:#ccc;color:#000}
+.ocps-navbar a,.ocps-topnav a,.ocps-sidenav a,.ocps-dropdown-content a,.ocps-accordion-content a,.ocps-dropnav a{text-decoration:none!important}
+.ocps-navbar .ocps-opennav.ocps-right{float:right!important}.ocps-topnav{padding:8px 8px}
+
+
+/* Start of topnav */
+.ocps-topnav a{padding:0 8px;border-bottom:3px solid transparent;-webkit-transition:border-bottom .3s;transition:border-bottom .3s}
+.ocps-topnav a:hover{border-bottom:3px solid #fff}
+.ocps-topnav .ocps-dropdown-hover a{border-bottom:0}
+
+.ocps-opennav,.ocps-closenav{color:inherit}
+.ocps-opennav:hover,.ocps-closenav:hover{cursor:pointer;opacity:0.8}
+
+/* Start of sidenav */
+.ocps-sidenav{height:100%;width:auto;background-color:#fff;z-index:1;overflow:auto}
+.ocps-sidenav a{
+	padding:10px 7px 10px 16px;;
+	
+	}
+.ocps-sidenav a:hover{background-color:#ccc}
+.ocps-sidenav a,.ocps-dropnav a{display:block}
+.ocps-sidenav .ocps-accordion-content a {padding: 4px 2px 4px 35px;}
+.ocps-sidenav .ocps-dropdown-hover:hover,.ocps-sidenav .ocps-dropdown-hover:first-child,.ocps-sidenav .ocps-dropdown-click:hover,.ocps-dropnav a:hover{background-color:#ccc;color:#000}
+.ocps-sidenav .ocps-dropdown-hover,.ocps-sidenav .ocps-dropdown-click {width:100%}
+.ocps-sidenav .ocps-dropdown-hover .ocps-dropdown-content,.ocps-sidenav .ocps-dropdown-click .ocps-dropdown-content{min-width:100%}
