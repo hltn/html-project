@@ -87,29 +87,32 @@
 								<div class="ocps-container ocps-border ocps-white ocps-margin-left-10 ocps-margin-right-10 ocps-margin-top-10">
 								
 									<div class="ocps-row">
-									  <a href="danh_muc.html">
-									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10 ocps-border-red"><h3>Danh mục</h3></div>
+									  <a href="quan_ly_congdan_congdan.html">
+									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10 ocps-border-red"><h3>Công dân</h3></div>
 									  </a>
-									  <a href="nhom_danh_muc.html">
-									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10 "><h3>Nhóm danh mục</h3></div>
+									  <a href="quan_ly_congdan_tochuc.html">
+									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10 "><h3>Doanh nghiệp</h3></div>
 									  </a>
 									</div>
 									
-									<h2 class="ocps-border-bottom ocps-margin-top-35">Danh mục</h2>
+									<h2 class="ocps-border-bottom ocps-margin-top-35">Doanh nghiệp</h2>
 									
 									<div class="ocps-border-bottom ocps-padding-bottom-35">
 										<div class="ocps-row-padding ocps-margin-top-35">
+											
+											
 											<div class="ocps-third">
 												<select class="ocps-select ocps-border ocps-white" name="option">
-												  <option disabled selected>Chọn Nhóm danh mục</option>
-												  <option value="1">Danh mục các đơn vị hành chính 3 cấp tinh, huyện, xã</option>
-												  <option value="2">Cấp quản lý TTHC</option>
-												  <option value="3">Loại hình tổ chức doanh nghiệp</option>
+												  <option disabled selected>Chọn Trạng thái tài khoản</option>
+												  <option value="1">Đã đăng kí</option>
+												  <option value="2">Đã xác nhận</option>
+												  <option value="3">Đã kích hoạt</option>
+												  <option>Đã khóa</option>
 												</select>
 											</div>
 											
 											<div class="ocps-third">
-												<input class="ocps-input ocps-border" type="text" placeholder="Tên,Mã Danh mục">
+												<input class="ocps-input ocps-border" type="text" placeholder="Tên,Mã Cán bộ">
 											</div>
 										</div>
 										<div class="ocps-row-padding ocps-margin-top-35">
@@ -119,47 +122,40 @@
 									</div>	
 									
 									<div class="ocps-row ocps-margin-top-35">
-										<a class="ocps-btn-floating ocps-theme" title="Thêm Danh mục"><i class="material-icons">add</i></a>
+										<a class="ocps-btn-floating ocps-theme" title="Thêm Cán bộ"><i class="material-icons">add</i></a>
 									</div>
 									<div class="ocps-responsive ocps-margin-top-10">
 										<table class="ocps-table ocps-striped">
 											<col style="width:5%">
-											<col style="width:5%">
+											<col style="width:10%">
+									        <col style="width:20%">
+									        <col style="width:20%">
+									        <col style="width:20%">
 									        <col style="width:10%">
 									        <col style="width:15%">
-									        <col style="width:10%">
-									        <col style="width:10%">
-									        <col style="width:10%">
-									        <col style="width:5%">
-									        <col style="width:10%">
-									        <col style="width:10%">
-									        <col style="width:10%">
 									        <thead>
 									        	<th>STT</th>
-									        	<th>Định danh</th>
-									        	<th>Mã</th>
-									        	<th>Tên</th>
-									        	<th>Cây thư mục</th>
-									        	<th>Ngày tạo</th>
-									        	<th>Ngày sửa</th>
-									        	<th>Số phiên bản</th>
-									        	<th>Tác giả</th>
-									        	<th>Đang sử dụng</th>
+									        	<th>Mã số doanh nghiệp</th>
+									        	<th>Tên doanh nghiệp</th>
+									        	<th>Loại hình tổ chức</th>
+									        	<th>Tài khoản</th>
+									        	<th>Trạng thái tài khoản</th>
 									        	<th>Hành động</th>
 									        </thead>
 									        
 									        <tbody>
 												<tr>
 												  <td>1</td>
-												  <td>2457</td>
-												  <td>00112</td>
-												  <td>Phường Thụy Khuê</td>
-												  <td>01.003.00112</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01</td>
-												  <td>Admin QA</td>
-												  <td>Đang sử dụng</td>
+												  <td>12345678911001</td>
+												  <td>Công ty TNHH Hoàng Anh 1</td>
+												  <td>LHTC-TNHH</td>
+												  <td>doanhnghiep01@opencps.vn</td>
+												  <td>
+												  		<i class="material-icons ocps-xlarge ocps-text-red" title="Moi Đăng ký">fiber_new</i>
+												  		<i class="material-icons ocps-xlarge ocps-text-green" title="Đã xác nhận">check_circle</i>
+											  			<i class="material-icons ocps-xlarge " title="Đã khóa">lock_outline</i>
+											  			<i class="material-icons ocps-xlarge ocps-text-green" title="Đã kích hoạt">lock_open</i>
+									  			  </td>
 												  <td>
 												  
 												  	<div class="ocps-row">
@@ -168,6 +164,18 @@
 											  		<div class="ocps-row">
 											  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
 											  			<i class="material-icons ocps-xlarge">edit</i>
+										  			</a>
+										  			</div>
+										  			
+										  			<div class="ocps-row">
+											  		<a href="#" class="ocps-btn ocps-dark-grey ocps-margin-top-10 ocps-ripple ocps-round-small" title="Locked">
+											  			<i class="material-icons ocps-xlarge">lock_outline</i>
+										  			</a>
+										  			</div>
+										  			
+										  			<div class="ocps-row">
+											  		<a href="#" class="ocps-btn ocps-green ocps-margin-top-10 ocps-ripple ocps-round-small" title="Unlocked">
+											  			<i class="material-icons ocps-xlarge">lock_open</i>
 										  			</a>
 										  			</div>
 											  		
@@ -181,15 +189,16 @@
 												
 												<tr>
 												  <td>2</td>
-												  <td>2457</td>
-												  <td>00112</td>
-												  <td>Phường Thụy Khuê</td>
-												  <td>01.003.00112</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01</td>
-												  <td>Admin QA</td>
-												  <td>Đang sử dụng</td>
+												  <td>12345678911001</td>
+												  <td>Công ty TNHH Hoàng Anh 1</td>
+												  <td>LHTC-TNHH</td>
+												  <td>doanhnghiep01@opencps.vn</td>
+												  <td>
+												  		<i class="material-icons ocps-xlarge ocps-text-red" title="Moi Đăng ký">fiber_new</i>
+												  		<i class="material-icons ocps-xlarge ocps-text-green" title="Đã xác nhận">check_circle</i>
+											  			<i class="material-icons ocps-xlarge " title="Đã khóa">lock_outline</i>
+											  			<i class="material-icons ocps-xlarge ocps-text-green" title="Đã kích hoạt">lock_open</i>
+									  			  </td>
 												  <td>
 												  
 												  	<div class="ocps-row">
@@ -200,34 +209,16 @@
 											  			<i class="material-icons ocps-xlarge">edit</i>
 										  			</a>
 										  			</div>
-											  		
-											  		<div class="ocps-row">
-											  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
-											  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
-											  		</a>
-											  		</div>
-												  </td> 
-												</tr>
-												
-												<tr>
-												  <td>3</td>
-												  <td>2457</td>
-												  <td>00112</td>
-												  <td>Phường Thụy Khuê</td>
-												  <td>01.003.00112</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01</td>
-												  <td>Admin QA</td>
-												  <td>Đang sử dụng</td>
-												  <td>
-												  
-												  	<div class="ocps-row">
+										  			
+										  			<div class="ocps-row">
+											  		<a href="#" class="ocps-btn ocps-dark-grey ocps-margin-top-10 ocps-ripple ocps-round-small" title="Locked">
+											  			<i class="material-icons ocps-xlarge">lock_outline</i>
+										  			</a>
 										  			</div>
-											  		
-											  		<div class="ocps-row">
-											  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
-											  			<i class="material-icons ocps-xlarge">edit</i>
+										  			
+										  			<div class="ocps-row">
+											  		<a href="#" class="ocps-btn ocps-green ocps-margin-top-10 ocps-ripple ocps-round-small" title="Unlocked">
+											  			<i class="material-icons ocps-xlarge">lock_open</i>
 										  			</a>
 										  			</div>
 											  		
@@ -240,16 +231,17 @@
 												</tr>
 												
 												<tr>
-												  <td>4</td>
-												  <td>2457</td>
-												  <td>00112</td>
-												  <td>Phường Thụy Khuê</td>
-												  <td>01.003.00112</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01</td>
-												  <td>Admin QA</td>
-												  <td>Đang sử dụng</td>
+												  <td>3</td>
+												  <td>12345678911001</td>
+												  <td>Công ty TNHH Hoàng Anh 1</td>
+												  <td>LHTC-TNHH</td>
+												  <td>doanhnghiep01@opencps.vn</td>
+												  <td>
+												  		<i class="material-icons ocps-xlarge ocps-text-red" title="Moi Đăng ký">fiber_new</i>
+												  		<i class="material-icons ocps-xlarge ocps-text-green" title="Đã xác nhận">check_circle</i>
+											  			<i class="material-icons ocps-xlarge " title="Đã khóa">lock_outline</i>
+											  			<i class="material-icons ocps-xlarge ocps-text-green" title="Đã kích hoạt">lock_open</i>
+									  			  </td>
 												  <td>
 												  
 												  	<div class="ocps-row">
@@ -258,6 +250,61 @@
 											  		<div class="ocps-row">
 											  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
 											  			<i class="material-icons ocps-xlarge">edit</i>
+										  			</a>
+										  			</div>
+										  			
+										  			<div class="ocps-row">
+											  		<a href="#" class="ocps-btn ocps-dark-grey ocps-margin-top-10 ocps-ripple ocps-round-small" title="Locked">
+											  			<i class="material-icons ocps-xlarge">lock_outline</i>
+										  			</a>
+										  			</div>
+										  			
+										  			<div class="ocps-row">
+											  		<a href="#" class="ocps-btn ocps-green ocps-margin-top-10 ocps-ripple ocps-round-small" title="Unlocked">
+											  			<i class="material-icons ocps-xlarge">lock_open</i>
+										  			</a>
+										  			</div>
+											  		
+											  		<div class="ocps-row">
+											  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
+											  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
+											  		</a>
+											  		</div>
+												  </td> 
+												</tr>
+												
+												<tr>
+												  <td>4</td>
+												  <td>12345678911001</td>
+												  <td>Công ty TNHH Hoàng Anh 1</td>
+												  <td>LHTC-TNHH</td>
+												  <td>doanhnghiep01@opencps.vn</td>
+												  <td>
+												  		<i class="material-icons ocps-xlarge ocps-text-red" title="Moi Đăng ký">fiber_new</i>
+												  		<i class="material-icons ocps-xlarge ocps-text-green" title="Đã xác nhận">check_circle</i>
+											  			<i class="material-icons ocps-xlarge " title="Đã khóa">lock_outline</i>
+											  			<i class="material-icons ocps-xlarge ocps-text-green" title="Đã kích hoạt">lock_open</i>
+									  			  </td>
+												  <td>
+												  
+												  	<div class="ocps-row">
+										  			</div>
+											  		
+											  		<div class="ocps-row">
+											  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
+											  			<i class="material-icons ocps-xlarge">edit</i>
+										  			</a>
+										  			</div>
+										  			
+										  			<div class="ocps-row">
+											  		<a href="#" class="ocps-btn ocps-dark-grey ocps-margin-top-10 ocps-ripple ocps-round-small" title="Locked">
+											  			<i class="material-icons ocps-xlarge">lock_outline</i>
+										  			</a>
+										  			</div>
+										  			
+										  			<div class="ocps-row">
+											  		<a href="#" class="ocps-btn ocps-green ocps-margin-top-10 ocps-ripple ocps-round-small" title="Unlocked">
+											  			<i class="material-icons ocps-xlarge">lock_open</i>
 										  			</a>
 										  			</div>
 											  		
@@ -271,15 +318,16 @@
 												
 												<tr>
 												  <td>5</td>
-												  <td>2457</td>
-												  <td>00112</td>
-												  <td>Phường Thụy Khuê</td>
-												  <td>01.003.00112</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01</td>
-												  <td>Admin QA</td>
-												  <td>Đang sử dụng</td>
+												  <td>12345678911001</td>
+												  <td>Công ty TNHH Hoàng Anh 1</td>
+												  <td>LHTC-TNHH</td>
+												  <td>doanhnghiep01@opencps.vn</td>
+												  <td>
+												  		<i class="material-icons ocps-xlarge ocps-text-red" title="Moi Đăng ký">fiber_new</i>
+												  		<i class="material-icons ocps-xlarge ocps-text-green" title="Đã xác nhận">check_circle</i>
+											  			<i class="material-icons ocps-xlarge " title="Đã khóa">lock_outline</i>
+											  			<i class="material-icons ocps-xlarge ocps-text-green" title="Đã kích hoạt">lock_open</i>
+									  			  </td>
 												  <td>
 												  
 												  	<div class="ocps-row">
@@ -290,13 +338,25 @@
 											  			<i class="material-icons ocps-xlarge">edit</i>
 										  			</a>
 										  			</div>
+										  			
+										  			<div class="ocps-row">
+											  		<a href="#" class="ocps-btn ocps-dark-grey ocps-margin-top-10 ocps-ripple ocps-round-small" title="Locked">
+											  			<i class="material-icons ocps-xlarge">lock_outline</i>
+										  			</a>
+										  			</div>
+										  			
+										  			<div class="ocps-row">
+											  		<a href="#" class="ocps-btn ocps-green ocps-margin-top-10 ocps-ripple ocps-round-small" title="Unlocked">
+											  			<i class="material-icons ocps-xlarge">lock_open</i>
+										  			</a>
+										  			</div>
 											  		
 											  		<div class="ocps-row">
 											  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
 											  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
 											  		</a>
 											  		</div>
-												  </td>  
+												  </td> 
 												</tr>
 												
 											</tbody>

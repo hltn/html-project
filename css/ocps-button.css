@@ -58,7 +58,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 .ocps-btn-floating{
 	width:40px;
 	height:40px;
-/* 	line-height:40px */
+	line-height:40px
 	}
 .ocps-btn-floating-large{width:56px;height:56px;line-height:56px}
 .ocps-btn-group .ocps-btn{float:left}

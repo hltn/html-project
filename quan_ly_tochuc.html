@@ -38,7 +38,7 @@
 						      Quản lý dịch vụ công cấp 3 <i class="material-icons ocps-display-right">keyboard_arrow_down</i>
 						    </a>
 						    <div id="submenu2" class="ocps-accordion-content ocps-white ">
-						      <a href="thu_tuc_cap3.html">Quản lý Thủ tục</a>
+						      <a href="quan_ly_thu_tuc.html">Quản lý Thủ tục</a>
 						      <a href="quan_ly_canbo.html">Quản lý cán bộ</a>
 						      <a href="quy_trinh.html">Quy trình</a>
 						      <a href="quan_ly_congdan_tochuc.html">Quan ly cong dan, to chuc</a>
@@ -85,61 +85,66 @@
 					<div class="ocps-row">
 							
 								<div class="ocps-container ocps-border ocps-white ocps-margin-left-10 ocps-margin-right-10 ocps-margin-top-10">
+								
 									<div class="ocps-row">
-									  <a href="cap_quan_ly.html">
-									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10"><h3>Cấp quản lý</h3></div>
+									  <a href="quan_ly_tochuc.html">
+									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10 ocps-border-red"><h3>Tổ chức</h3></div>
 									  </a>
-									  <a href="linh_vuc.html">
-									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10"><h3>Lĩnh vực</h3></div>
-									  </a>
-									  <a href="thu_tuc_hanh_chinh.html">
-									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10  ocps-border-red">
-									    <h3>Thủ tục hành chính</h3>
-									    </div>
-									  </a>
-									  <a href="bieu_mau.html">
-									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10"><h3>Biểu mẫu</h3></div>
+									  <a href="quan_ly_canbo.html">
+									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10"><h3>Cán bộ</h3></div>
 									  </a>
 									</div>
-									<h2 class="ocps-border-bottom ocps-margin-top-35">Thủ tục hành chính</h2>
-									<div class="ocps-row">
-										<a class="ocps-btn-floating ocps-theme" title="Thêm thủ tục"><i class="material-icons">add</i></a>
+									
+									<h2 class="ocps-border-bottom ocps-margin-top-35">Quản lý Tổ chức</h2>
+									
+									<div class="ocps-border-bottom ocps-padding-bottom-35">
+										<div class="ocps-row-padding ocps-margin-top-35">
+											<div class="ocps-third">
+												<select class="ocps-select ocps-border ocps-white" name="option">
+												  <option value="">Tất cả</option>
+												  <option value="1">Lọc theo cơ quan co quản lý cán bộ</option>
+												  <option value="2">Lọc theo cơ quan không quản lý cán bộ</option>
+												</select>
+											</div>
+										</div>
+										
+									</div>	
+									
+									<div class="ocps-row ocps-margin-top-35">
+										<a class="ocps-btn-floating ocps-theme" title="Thêm tổ chức"><i class="material-icons">add</i></a>
 									</div>
 									<div class="ocps-responsive ocps-margin-top-10">
 										<table class="ocps-table ocps-striped">
 											<col style="width:5%">
-									        <col style="width:40%">
-									        <col style="width:40%">
+									        <col style="width:80%">
 									        <col style="width:15%">
 											<tr>
 											  <td>1</td>
 											  <td>
 											  	<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Số hiệu</b></div>
-											  		<div class="ocps-col s9 ">B-BCT-034067-TT1</div>
+											  		<div class="ocps-col s3 "><b>Mã tổ chức</b></div>
+											  		<div class="ocps-col s9 ">BCT_QT2</div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Tên thủ tục</b></div>
-											  		<div class="ocps-col s9">Xác nhận đăng ký thực hiện khuyến mại theo hình thức mang tính may rủi thực hiện trên địa bàn từ 2 tỉnh, thành phố trực thuộc Trung ương trở lên hoặc theo quy định tại Điều 17 NĐ số 37/2006/NĐ-CP</div>
+											  		<div class="ocps-col s3 "><b>Tên tổ chức</b></div>
+											  		<div class="ocps-col s9">Quy trình thông báo tập trung kinh tế</div>
+										  		</div>
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Quản lý nhân viên</b></div>
+											  		<div class="ocps-col s9">
+											  			<i class="material-icons ocps-xlarge ocps-text-green">people</i>
+											  			<i class="material-icons ocps-xlarge">people_outline</i>
+											  		</div>
 										  		</div>
 											  </td>
 											  
 											  <td>
-											  	<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Lĩnh vực thủ tục</b></div>
-											  		<div class="ocps-col s9">Xúc tiến thương mại</div>
-										  		</div>
-										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Cơ quan quản lý</b></div>
-											  		<div class="ocps-col s9">Cục Xúc tiến thương mại</div>
-										  		</div>
-										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Trạng thái</b></div>
-											  		<div class="ocps-col s9">Công khai</div>
-										  		</div>
-											  </td>
 											  
-											  <td>
+											  	<div class="ocps-row">
+										  		<a href="#" class="ocps-btn ocps-blue ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add">
+										  			<i class="material-icons ocps-xlarge">add_circle_outline</i>
+									  			</a>
+									  			</div>
 										  		
 										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
@@ -158,31 +163,29 @@
 											  <td>1</td>
 											  <td>
 											  	<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Số hiệu</b></div>
-											  		<div class="ocps-col s9 ">B-BCT-034067-TT1</div>
+											  		<div class="ocps-col s3 "><b>Mã tổ chức</b></div>
+											  		<div class="ocps-col s9 ">BCT_QT2</div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Tên thủ tục</b></div>
-											  		<div class="ocps-col s9">Xác nhận đăng ký thực hiện khuyến mại theo hình thức mang tính may rủi thực hiện trên địa bàn từ 2 tỉnh, thành phố trực thuộc Trung ương trở lên hoặc theo quy định tại Điều 17 NĐ số 37/2006/NĐ-CP</div>
+											  		<div class="ocps-col s3 "><b>Tên tổ chức</b></div>
+											  		<div class="ocps-col s9">Quy trình thông báo tập trung kinh tế</div>
+										  		</div>
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Quản lý nhân viên</b></div>
+											  		<div class="ocps-col s9">
+											  			<i class="material-icons ocps-xlarge ocps-text-green">people</i>
+											  			<i class="material-icons ocps-xlarge">people_outline</i>
+											  		</div>
 										  		</div>
 											  </td>
 											  
 											  <td>
-											  	<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Lĩnh vực thủ tục</b></div>
-											  		<div class="ocps-col s9 ">Xúc tiến thương mại</div>
-										  		</div>
-										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Cơ quan quản lý</b></div>
-											  		<div class="ocps-col s9">Cục Xúc tiến thương mại</div>
-										  		</div>
-										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Trạng thái</b></div>
-											  		<div class="ocps-col s9">Công khai</div>
-										  		</div>
-											  </td>
 											  
-											  <td>
+											  	<div class="ocps-row">
+										  		<a href="#" class="ocps-btn ocps-blue ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add">
+										  			<i class="material-icons ocps-xlarge">add_circle_outline</i>
+									  			</a>
+									  			</div>
 										  		
 										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
@@ -201,31 +204,29 @@
 											  <td>1</td>
 											  <td>
 											  	<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Số hiệu</b></div>
-											  		<div class="ocps-col s9 ">B-BCT-034067-TT1</div>
+											  		<div class="ocps-col s3 "><b>Mã tổ chức</b></div>
+											  		<div class="ocps-col s9 ">BCT_QT2</div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Tên thủ tục</b></div>
-											  		<div class="ocps-col s9">Xác nhận đăng ký thực hiện khuyến mại theo hình thức mang tính may rủi thực hiện trên địa bàn từ 2 tỉnh, thành phố trực thuộc Trung ương trở lên hoặc theo quy định tại Điều 17 NĐ số 37/2006/NĐ-CP</div>
+											  		<div class="ocps-col s3 "><b>Tên tổ chức</b></div>
+											  		<div class="ocps-col s9">Quy trình thông báo tập trung kinh tế</div>
+										  		</div>
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Quản lý nhân viên</b></div>
+											  		<div class="ocps-col s9">
+											  			<i class="material-icons ocps-xlarge ocps-text-green">people</i>
+											  			<i class="material-icons ocps-xlarge">people_outline</i>
+											  		</div>
 										  		</div>
 											  </td>
 											  
 											  <td>
-											  	<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Lĩnh vực thủ tục</b></div>
-											  		<div class="ocps-col s9 ">Xúc tiến thương mại</div>
-										  		</div>
-										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Cơ quan quản lý</b></div>
-											  		<div class="ocps-col s9">Cục Xúc tiến thương mại</div>
-										  		</div>
-										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Trạng thái</b></div>
-											  		<div class="ocps-col s9">Công khai</div>
-										  		</div>
-											  </td>
 											  
-											  <td>
+											  	<div class="ocps-row">
+										  		<a href="#" class="ocps-btn ocps-blue ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add">
+										  			<i class="material-icons ocps-xlarge">add_circle_outline</i>
+									  			</a>
+									  			</div>
 										  		
 										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
@@ -244,31 +245,29 @@
 											  <td>1</td>
 											  <td>
 											  	<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Số hiệu</b></div>
-											  		<div class="ocps-col s9 ">B-BCT-034067-TT1</div>
+											  		<div class="ocps-col s3 "><b>Mã tổ chức</b></div>
+											  		<div class="ocps-col s9 ">BCT_QT2</div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Tên thủ tục</b></div>
-											  		<div class="ocps-col s9">Xác nhận đăng ký thực hiện khuyến mại theo hình thức mang tính may rủi thực hiện trên địa bàn từ 2 tỉnh, thành phố trực thuộc Trung ương trở lên hoặc theo quy định tại Điều 17 NĐ số 37/2006/NĐ-CP</div>
+											  		<div class="ocps-col s3 "><b>Tên tổ chức</b></div>
+											  		<div class="ocps-col s9">Quy trình thông báo tập trung kinh tế</div>
+										  		</div>
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Quản lý nhân viên</b></div>
+											  		<div class="ocps-col s9">
+											  			<i class="material-icons ocps-xlarge ocps-text-green">people</i>
+											  			<i class="material-icons ocps-xlarge">people_outline</i>
+											  		</div>
 										  		</div>
 											  </td>
 											  
 											  <td>
-											  	<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Lĩnh vực thủ tục</b></div>
-											  		<div class="ocps-col s9 ">Xúc tiến thương mại</div>
-										  		</div>
-										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Cơ quan quản lý</b></div>
-											  		<div class="ocps-col s9">Cục Xúc tiến thương mại</div>
-										  		</div>
-										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Trạng thái</b></div>
-											  		<div class="ocps-col s9">Công khai</div>
-										  		</div>
-											  </td>
 											  
-											  <td>
+											  	<div class="ocps-row">
+										  		<a href="#" class="ocps-btn ocps-blue ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add">
+										  			<i class="material-icons ocps-xlarge">add_circle_outline</i>
+									  			</a>
+									  			</div>
 										  		
 										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
@@ -287,31 +286,29 @@
 											  <td>1</td>
 											  <td>
 											  	<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Số hiệu</b></div>
-											  		<div class="ocps-col s9 ">B-BCT-034067-TT1</div>
+											  		<div class="ocps-col s3 "><b>Mã tổ chức</b></div>
+											  		<div class="ocps-col s9 ">BCT_QT2</div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Tên thủ tục</b></div>
-											  		<div class="ocps-col s9">Xác nhận đăng ký thực hiện khuyến mại theo hình thức mang tính may rủi thực hiện trên địa bàn từ 2 tỉnh, thành phố trực thuộc Trung ương trở lên hoặc theo quy định tại Điều 17 NĐ số 37/2006/NĐ-CP</div>
+											  		<div class="ocps-col s3 "><b>Tên tổ chức</b></div>
+											  		<div class="ocps-col s9">Quy trình thông báo tập trung kinh tế</div>
+										  		</div>
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Quản lý nhân viên</b></div>
+											  		<div class="ocps-col s9">
+											  			<i class="material-icons ocps-xlarge ocps-text-green">people</i>
+											  			<i class="material-icons ocps-xlarge">people_outline</i>
+											  		</div>
 										  		</div>
 											  </td>
 											  
 											  <td>
-											  	<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Lĩnh vực thủ tục</b></div>
-											  		<div class="ocps-col s9 ">Xúc tiến thương mại</div>
-										  		</div>
-										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Cơ quan quản lý</b></div>
-											  		<div class="ocps-col s9">Cục Xúc tiến thương mại</div>
-										  		</div>
-										  		<div class="ocps-row ocps-margin-bottom-10">
-											  		<div class="ocps-col s3 "><b>Trạng thái</b></div>
-											  		<div class="ocps-col s9">Công khai</div>
-										  		</div>
-											  </td>
 											  
-											  <td>
+											  	<div class="ocps-row">
+										  		<a href="#" class="ocps-btn ocps-blue ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add">
+										  			<i class="material-icons ocps-xlarge">add_circle_outline</i>
+									  			</a>
+									  			</div>
 										  		
 										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">

@@ -27,6 +27,10 @@ function myFunction(id) {
 }
 
 
+
+
+
+
 //jQuery time
 var parent, ink, d, x, y;
 $(".ocps-effect-ripple").click(function(e){
