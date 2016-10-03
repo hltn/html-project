@@ -41,7 +41,7 @@
 						      <a href="quan_ly_thu_tuc.html">Quản lý Thủ tục</a>
 						      <a href="quan_ly_canbo.html">Quản lý cán bộ</a>
 						      <a href="quy_trinh.html">Quy trình</a>
-						      <a href="quan_ly_congdan_tochuc.html">Quan ly cong dan, to chuc</a>
+						      <a href="quan_ly_congdan_tochuc.html">Quản lý công dân, tổ chức</a>
 						      <a href="thanhtoan.html">Cấu hình thanh toán</a>
 						    </div>
 						  </div>  
@@ -85,105 +85,128 @@
 					<div class="ocps-row">
 							
 								<div class="ocps-container ocps-border ocps-white ocps-margin-left-10 ocps-margin-right-10 ocps-margin-top-10">
-									<h2 class="ocps-border-bottom">CẬP NHẬT TỔ CHỨC</h2>
+								
+									<h2 class="ocps-border-bottom">CẬP NHẬT CẤU HÌNH DỊCH VỤ CÔNG</h2>
 									
-									<div class="ocps-margin-top-10">
+									<div class="ocps-responsive ocps-margin-top-10">
 									
 										<form class="ocps-container" action="form.php">
 										
-											<div class="ocps-row-padding">
+											<div class="ocps-row-padding ocps-margin-bottom-10">
 												<div class="ocps-col s6">
-													<label>Cơ quan thực hiện</label>
-													<select class="ocps-select ocps-border" name="option" required>
-													  <option value="1">Bộ công thương</option>
-													  <option value="2">Cục Đăng kiểm Việt Nam - Phòng VAQ</option>
-													  <option value="3">Cục đường sắt</option>
+													<label>Lọc theo lĩnh vực</label>
+													<select class="ocps-select ocps-border ocps-white" name="option" required>
+													  <option value="1">Xúc tiến thương mại</option>
+													  <option value="2">Thương maị điện tử</option>
+													  <option value="3">Thương mại biên giới</option>
 													</select>
 												</div>
 											</div>
-											<br>
 											
-											<div class="ocps-row-padding">
+											<div class="ocps-row-padding ocps-margin-bottom-10">
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Tài khoản ngân hàng</label>
-												</div>
-												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Địa chỉ thanh toán</label>
+													<label>Thủ tục hành chính</label>
+													<select class="ocps-select ocps-border ocps-white" name="option" required>
+													  <option value="1">Cấp lại Chứng chỉ an toàn cho các doanh nghiệp kinh doanh vận tải đường sắt</option>
+													  <option value="2">Thủ tục cấp Giấy phép thành lập Văn phòng đại diện của Tổ chức Xúc tiến thương mại nước ngoài tại Việt Nam.</option>
+													  <option value="3">Xác nhận thay đổi, bổ sung nội dung đăng ký tổ chức hội chợ, triển lãm thương mại tại Việt Nam</option>
+													</select>
 												</div>
 											</div>
 											
-											<div class="ocps-panel ocps-light-grey">
-												<h3>Cấu hình thanh toán trực tuyến keypay</h3>
-											</div>
-											
-											<div class="ocps-row-padding">
+											<div class="ocps-row-padding ocps-margin-bottom-10">
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Địa chỉ miền</label>
-												</div>
-												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Phiên bản </label>
+													<label>Co quan thuc hien</label>
+													<select class="ocps-select ocps-border ocps-white" name="option" required>
+													  <option value="1">Cục Xúc tiến thương mại</option>
+													  <option value="2">Cục Đường sắt Việt Nam</option>
+													  <option value="3">Cục ATTP</option>
+													</select>
 												</div>
 											</div>
 											
-											<div class="ocps-row-padding">
+											<div class="ocps-row-padding ocps-margin-bottom-10">
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Mã đại lý</label>
-												</div>
-												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Mã bảo mật</label>
-												</div>
-											</div>
-											
-											<div class="ocps-panel ocps-light-grey">
-												<h3>Cấu hình thông tin hóa đơn</h3>
-											</div>
-											
-											<div class="ocps-row-padding">
-												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Mã số thuế</label>
-												</div>
-												<div class="ocps-col s6">
-													<input class="ocps-input" type="text"  required>
-													<label class="ocps-label ocps-validate">Mẫu số </label>
+													<label>Cấp độ dịch vụ</label>
+													<select class="ocps-select ocps-border ocps-white" name="option" required>
+													  <option value="1">Mức độ 1</option>
+													  <option value="2">Mức độ 2</option>
+													  <option value="3">Mức độ 3</option>
+													  <option value="3">Mức độ 4</option>
+													</select>
 												</div>
 											</div>
 											
-											<div class="ocps-row-padding">
+											<div class="ocps-row-padding ocps-margin-bottom-10">
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Kí hiệu</label>
-												</div>
-												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Số thứ tự</label>
+													<label>Mẫu hồ sơ</label>
+													<select class="ocps-select ocps-border ocps-white" name="option" required>
+													  <option value="1">Thông báo tập trung kinh tế </option>
+													  <option value="2">Đề nghị hưởng miễn trừ đối với thỏa thuận hạn chế cạnh tranh</option>
+													  <option value="3">Đề nghị hưởng miễn trừ đối với tập trung kinh tế </option>
+													</select>
 												</div>
 											</div>
 											
-											<div class="ocps-row-padding">
+											
+											<div class="ocps-row-padding ocps-margin-bottom-10">
 												<div class="ocps-col s12">
-													<textarea class="ocps-input" rows="10"></textarea>
-													<label class="ocps-label">Mẫu in biên lai</label>
-													
+													<label class="ocps-label">Hướng dẫn thực hiện</label>
+													<textarea class="ocps-input" rows="5"></textarea>
 												</div>
 												
 											</div>
 											
+											<div class="ocps-row-padding ocps-margin-bottom-10">
+												<div class="ocps-col s12">
+													<label class="ocps-label">Service URL</label>
+													<textarea class="ocps-input" rows="5"></textarea>
+												</div>
+												
+											</div>
+											
+											<div class="ocps-row-padding ocps-margin-bottom-10">
+												
+													<input class="ocps-check" type="checkbox" ></input>
+													<label class="ocps-label">Cổng tiếp nhận</label>
+												
+											</div>
+											
+											<div class="ocps-row-padding ocps-margin-bottom-10">
+													
+													<input class="ocps-check" type="checkbox" ></input>
+													<label class="ocps-label">Công dân nộp hồ sơ</label>
+													
+											</div>
+											
+											<div class="ocps-row-padding ocps-margin-bottom-10">
+													
+													<input class="ocps-check" type="checkbox" ></input>
+													<label class="ocps-label">Tiếp nhận một cửa</label>
+													
+											</div>
+											
+											<div class="ocps-row-padding ocps-margin-bottom-10">
+													
+													<input class="ocps-check" type="checkbox" ></input>
+													<label class="ocps-label">Doanh nghiệp nộp hồ sơ</label>
+													
+											</div>
+											
+											<div class="ocps-row-padding ocps-margin-bottom-10">
+													
+													<input class="ocps-check" type="checkbox" ></input>
+													<label class="ocps-label">Xử lí hồ sơ</label>
+													
+											</div>
+											
 											<div class="ocps-row-padding ocps-margin-top-10 ocps-margin-bottom-10">
-												<button type="button" class="ocps-btn ocps-theme"><i class="material-icons">pageview</i> Xem trước mẫu in biên lai</button>
 												<button type="submit" class="ocps-btn ocps-theme"><i class="material-icons">save</i> Save</button>
 											</div>
 										
 										</form>
 										
 									</div>
-									
 								</div>
 					</div>
 					

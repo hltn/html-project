@@ -1,5 +1,9 @@
 /* Start of column*/
 
+.ocps-display-type{
+	display:flex
+}
+
 .ocps-col,.ocps-half,.ocps-third,.ocps-twothird,.ocps-threequarter,.ocps-quarter{float:left;width:100%}
 .ocps-col.s1{width:8.33333%}
 .ocps-col.s2{width:16.66666%}

@@ -1,11 +1,13 @@
 /* Start of navbar */
 .ocps-navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
-.ocps-navbar li{float:left}.ocps-navbar li a,.ocps-navitem{display:block;padding:8px 16px}
+.ocps-navbar li{float:left}
+.ocps-navbar li a,.ocps-navitem{display:block;padding:8px 16px}
 .ocps-navbar li a:hover{color:#000;background-color:#ccc}
 .ocps-navbar .ocps-dropdown-hover,.ocps-navbar .ocps-dropdown-click{position:static}
 .ocps-navbar .ocps-dropdown-hover:hover,.ocps-navbar .ocps-dropdown-hover:first-child,.ocps-navbar .ocps-dropdown-click:hover{background-color:#ccc;color:#000}
 .ocps-navbar a,.ocps-topnav a,.ocps-sidenav a,.ocps-dropdown-content a,.ocps-accordion-content a,.ocps-dropnav a{text-decoration:none!important}
 .ocps-navbar .ocps-opennav.ocps-right{float:right!important}.ocps-topnav{padding:8px 8px}
+.ocps-navbar.vertical li{float:none}
 
 
 /* Start of topnav */

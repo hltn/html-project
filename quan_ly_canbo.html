@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/ocps.css">
-<script src="js/main.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/ocps.css">
+
+<script src="js/main.js"></script>
+
 <body style="background-color: #e9ebee">
 	
 			
@@ -34,7 +39,7 @@
 						  <a href="#" class="ocps-padding-16 ocps-theme ocps-large"><i class="fa fa-bar-chart ocps-xlarge"></i>  So do dich vu cong</a>
 						  <a href="cap_quan_ly.html">Quản lý dịch vụ công cấp 2</a>   
 						  <div class="ocps-accordion ocps-medium">
-						    <a onclick="myFunction('submenu2')" href="#" class="sidenavlink">
+						    <a onclick="ocps_toogleNavBar('submenu2')" href="#" class="sidenavlink">
 						      Quản lý dịch vụ công cấp 3 <i class="material-icons ocps-display-right">keyboard_arrow_down</i>
 						    </a>
 						    <div id="submenu2" class="ocps-accordion-content ocps-white ">
@@ -86,13 +91,14 @@
 							
 								<div class="ocps-container ocps-border ocps-white ocps-margin-left-10 ocps-margin-right-10 ocps-margin-top-10">
 								
-									<div class="ocps-row">
-									  <a href="quan_ly_tochuc.html">
-									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10 "><h3>Tổ chức</h3></div>
-									  </a>
-									  <a href="quan_ly_canbo.html">
-									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10 ocps-border-red"><h3>Cán bộ</h3></div>
-									  </a>
+									
+									<div class="ocps-row ocps-border-bottom ocps-display-type">
+									  	<div class="ocps-col m3 tablink ocps-padding-top-10 ">
+									  		<a href="quan_ly_tochuc.html" class="ocps-display-block"><h3>Tổ chức</h3></a>
+								  		</div> 
+									    <div class="ocps-col m3 tablink  ocps-padding-top-10 ocps-bottombar ocps-border-red">
+									    	<a href="quan_ly_canbo.html" class="ocps-display-block"><h3>Cán bộ</h3></a>
+								    	</div>	
 									</div>
 									
 									<h2 class="ocps-border-bottom ocps-margin-top-35">Quản lý Cán bộ</h2>
@@ -175,7 +181,7 @@
 											  		
 											  		<div class="ocps-row">
 											  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
-											  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
+											  			<i class="material-icons ocps-xlarge">delete_forever</i>
 											  		</a>
 											  		</div>
 												  </td>  
@@ -216,7 +222,7 @@
 											  		
 											  		<div class="ocps-row">
 											  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
-											  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
+											  			<i class="material-icons ocps-xlarge">delete_forever</i>
 											  		</a>
 											  		</div>
 												  </td>  
@@ -257,7 +263,7 @@
 											  		
 											  		<div class="ocps-row">
 											  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
-											  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
+											  			<i class="material-icons ocps-xlarge">delete_forever</i>
 											  		</a>
 											  		</div>
 												  </td>  
@@ -298,7 +304,7 @@
 											  		
 											  		<div class="ocps-row">
 											  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
-											  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
+											  			<i class="material-icons ocps-xlarge">delete_forever</i>
 											  		</a>
 											  		</div>
 												  </td>  
@@ -339,7 +345,7 @@
 											  		
 											  		<div class="ocps-row">
 											  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
-											  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
+											  			<i class="material-icons ocps-xlarge">delete_forever</i>
 											  		</a>
 											  		</div>
 												  </td>  

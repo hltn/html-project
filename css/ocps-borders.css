@@ -12,6 +12,11 @@
 .ocps-border-top{border-top:1px solid #ccc!important}.ocps-border-bottom{border-bottom:1px solid #ccc!important}
 .ocps-border-left{border-left:1px solid #ccc!important}.ocps-border-right{border-right:1px solid #ccc!important}
 
-.ocps-topbar{border-top:6px solid #ccc!important}.ocps-bottombar{border-bottom:6px solid #ccc!important}
-.ocps-leftbar{border-left:6px solid #ccc!important}.ocps-rightbar{border-right:6px solid #ccc!important}
+.ocps-topbar{border-top:3px solid #ccc!important}.ocps-bottombar{border-bottom:3px solid #ccc!important}
+.ocps-leftbar{border-left:3px solid #ccc!important}.ocps-rightbar{border-right:3px solid #ccc!important}
+
+.ocps-topbar-free{border-top:3px solid #ccc!important}.ocps-bottombar-free{border-bottom:3px solid #ccc!important}
+.ocps-leftbar-free{border-left:3px solid #ccc!important}.ocps-rightbar-free{border-right:3px solid #ccc!important}
+
+
 

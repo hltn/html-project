@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/ocps.css">
-<script src="js/main.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/ocps.css">
+
+<script src="js/main.js"></script>
+
 <body style="background-color: #e9ebee">
 	
 			
@@ -34,8 +39,8 @@
 						  <a href="#" class="ocps-padding-16 ocps-theme ocps-large"><i class="fa fa-bar-chart ocps-xlarge"></i>  So do dich vu cong</a>
 						  <a href="cap_quan_ly.html">Quản lý dịch vụ công cấp 2</a>   
 						  <div class="ocps-accordion ocps-medium">
-						    <a onclick="myFunction('submenu2')" href="#" class="sidenavlink">
-						      Quản lý dịch vụ công cấp 3 <i class="material-icons ocps-display-right">keyboard_arrow_down</i>
+						    <a onclick="ocps_toogleNavBar('submenu2')" href="#" class="sidenavlink">
+						      Quản lý dịch vụ công cấp 3<i class="material-icons ocps-right">keyboard_arrow_down</i>
 						    </a>
 						    <div id="submenu2" class="ocps-accordion-content ocps-white ">
 						      <a href="quan_ly_thu_tuc.html">Quản lý Thủ tục</a>
@@ -85,20 +90,25 @@
 					<div class="ocps-row">
 							
 								<div class="ocps-container ocps-border ocps-white ocps-margin-left-10 ocps-margin-right-10 ocps-margin-top-10">
-								
-									<div class="ocps-row">
-									  <a href="quan_ly_tochuc.html">
-									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10 ocps-border-red"><h3>Tổ chức</h3></div>
-									  </a>
-									  <a href="quan_ly_canbo.html">
-									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10"><h3>Cán bộ</h3></div>
-									  </a>
+									
+									<div class="ocps-row ocps-border-bottom ocps-display-type">
+									  	<div class="ocps-col m3 tablink ocps-padding-top-10 ocps-bottombar ocps-border-red">
+									  		<a href="quan_ly_tochuc.html" class="ocps-display-block"><h3>Tổ chức</h3></a>
+								  		</div> 
+									    <div class="ocps-col m3 tablink  ocps-padding-top-10 ">
+									    	<a href="quan_ly_canbo.html" class="ocps-display-block"><h3>Cán bộ</h3></a>
+								    	</div>	
 									</div>
 									
 									<h2 class="ocps-border-bottom ocps-margin-top-35">Quản lý Tổ chức</h2>
 									
 									<div class="ocps-border-bottom ocps-padding-bottom-35">
 										<div class="ocps-row-padding ocps-margin-top-35">
+										
+											<div class="ocps-third">
+												<input class="ocps-input ocps-border" type="text" placeholder="Tên,Mã Tổ chức">
+											</div>
+											
 											<div class="ocps-third">
 												<select class="ocps-select ocps-border ocps-white" name="option">
 												  <option value="">Tất cả</option>
@@ -106,12 +116,18 @@
 												  <option value="2">Lọc theo cơ quan không quản lý cán bộ</option>
 												</select>
 											</div>
+											
+											
+										</div>
+										
+										<div class="ocps-row-padding ocps-margin-top-35">
+													<button class="ocps-btn ocps-theme ocps-large"><i class="material-icons">search</i>Search</button>
 										</div>
 										
 									</div>	
 									
 									<div class="ocps-row ocps-margin-top-35">
-										<a class="ocps-btn-floating ocps-theme" title="Thêm tổ chức"><i class="material-icons">add</i></a>
+										<a class="ocps-btn-floating ocps-theme" title="Thêm tổ chức" href="add_edit_tochuc.html"><i class="material-icons">add</i></a>
 									</div>
 									<div class="ocps-responsive ocps-margin-top-10">
 										<table class="ocps-table ocps-striped">
@@ -123,11 +139,11 @@
 											  <td>
 											  	<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Mã tổ chức</b></div>
-											  		<div class="ocps-col s9 ">BCT_QT2</div>
+											  		<div class="ocps-col s9 "><a class="ocps-hover-able" href="quan_ly_tochuc_con.html">BCT_QT2</a></div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Tên tổ chức</b></div>
-											  		<div class="ocps-col s9">Quy trình thông báo tập trung kinh tế</div>
+											  		<div class="ocps-col s9"><a class="ocps-hover-able" href="quan_ly_tochuc_con.html">Bộ công thương</a></div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Quản lý nhân viên</b></div>
@@ -136,39 +152,54 @@
 											  			<i class="material-icons ocps-xlarge">people_outline</i>
 											  		</div>
 										  		</div>
+										  		
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Tổ chức trực thuộc</b></div>
+											  		<div class="ocps-col s9">
+											  			<i>4 Tổ chức trực thuộc</i> 
+											  		</div>
+										  		</div>
+										  		
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Cán bộ trực thuộc</b></div>
+											  		<div class="ocps-col s9">
+											  			<i>5 Cán bộ trực thuộc</i>
+											  		</div>
+										  		</div>
 											  </td>
 											  
 											  <td>
 											  
 											  	<div class="ocps-row">
-										  		<a href="#" class="ocps-btn ocps-blue ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add">
-										  			<i class="material-icons ocps-xlarge">add_circle_outline</i>
-									  			</a>
-									  			</div>
-										  		
-										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
 										  			<i class="material-icons ocps-xlarge">edit</i>
 									  			</a>
 									  			</div>
+											  
+											  	<div class="ocps-row">
+										  		<a href="#" class="ocps-btn ocps-green ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add Tổ chức con">
+										  			<i class="material-icons ocps-xlarge">add</i>
+									  			</a>
+									  			</div>
+										  		
+										  		
 										  		
 										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
-										  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
+										  			<i class="material-icons ocps-xlarge">delete_forever</i>
 										  		</a>
 										  		</div>
 											  </td> 
-											</tr>
-											<tr>
-											  <td>1</td>
+											</tr><tr>
+											  <td>2</td>
 											  <td>
 											  	<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Mã tổ chức</b></div>
-											  		<div class="ocps-col s9 ">BCT_QT2</div>
+											  		<div class="ocps-col s9 "><a class="ocps-hover-able" href="quan_ly_tochuc_con.html">BCT_QT2</a></div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Tên tổ chức</b></div>
-											  		<div class="ocps-col s9">Quy trình thông báo tập trung kinh tế</div>
+											  		<div class="ocps-col s9"><a class="ocps-hover-able" href="quan_ly_tochuc_con.html">Bộ công thương</a></div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Quản lý nhân viên</b></div>
@@ -177,39 +208,56 @@
 											  			<i class="material-icons ocps-xlarge">people_outline</i>
 											  		</div>
 										  		</div>
+										  		
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Tổ chức trực thuộc</b></div>
+											  		<div class="ocps-col s9">
+											  			<i>4 Tổ chức trực thuộc</i> 
+											  		</div>
+										  		</div>
+										  		
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Cán bộ trực thuộc</b></div>
+											  		<div class="ocps-col s9">
+											  			<i>5 Cán bộ trực thuộc</i>
+											  		</div>
+										  		</div>
 											  </td>
 											  
 											  <td>
 											  
 											  	<div class="ocps-row">
-										  		<a href="#" class="ocps-btn ocps-blue ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add">
-										  			<i class="material-icons ocps-xlarge">add_circle_outline</i>
-									  			</a>
-									  			</div>
-										  		
-										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
 										  			<i class="material-icons ocps-xlarge">edit</i>
 									  			</a>
 									  			</div>
+											  
+											  	<div class="ocps-row">
+										  		<a href="#" class="ocps-btn ocps-green ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add Tổ chức con">
+										  			<i class="material-icons ocps-xlarge">add</i>
+									  			</a>
+									  			</div>
+										  		
+										  		
 										  		
 										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
-										  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
+										  			<i class="material-icons ocps-xlarge">delete_forever</i>
 										  		</a>
 										  		</div>
 											  </td> 
 											</tr>
+											
 											<tr>
-											  <td>1</td>
+											  <td>3</td>
 											  <td>
 											  	<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Mã tổ chức</b></div>
-											  		<div class="ocps-col s9 ">BCT_QT2</div>
+											  		<div class="ocps-col s9 "><a class="ocps-hover-able" href="quan_ly_tochuc_con.html">BCT_QT2</a></div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Tên tổ chức</b></div>
-											  		<div class="ocps-col s9">Quy trình thông báo tập trung kinh tế</div>
+											  		<div class="ocps-col s9"><a class="ocps-hover-able" href="quan_ly_tochuc_con.html">Bộ công thương</a></div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Quản lý nhân viên</b></div>
@@ -218,39 +266,56 @@
 											  			<i class="material-icons ocps-xlarge">people_outline</i>
 											  		</div>
 										  		</div>
+										  		
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Tổ chức trực thuộc</b></div>
+											  		<div class="ocps-col s9">
+											  			<i>4 Tổ chức trực thuộc</i> 
+											  		</div>
+										  		</div>
+										  		
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Cán bộ trực thuộc</b></div>
+											  		<div class="ocps-col s9">
+											  			<i>5 Cán bộ trực thuộc</i>
+											  		</div>
+										  		</div>
 											  </td>
 											  
 											  <td>
 											  
 											  	<div class="ocps-row">
-										  		<a href="#" class="ocps-btn ocps-blue ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add">
-										  			<i class="material-icons ocps-xlarge">add_circle_outline</i>
-									  			</a>
-									  			</div>
-										  		
-										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
 										  			<i class="material-icons ocps-xlarge">edit</i>
 									  			</a>
 									  			</div>
+											  
+											  	<div class="ocps-row">
+										  		<a href="#" class="ocps-btn ocps-green ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add Tổ chức con">
+										  			<i class="material-icons ocps-xlarge">add</i>
+									  			</a>
+									  			</div>
+										  		
+										  		
 										  		
 										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
-										  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
+										  			<i class="material-icons ocps-xlarge">delete_forever</i>
 										  		</a>
 										  		</div>
 											  </td> 
 											</tr>
+											
 											<tr>
-											  <td>1</td>
+											  <td>4</td>
 											  <td>
 											  	<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Mã tổ chức</b></div>
-											  		<div class="ocps-col s9 ">BCT_QT2</div>
+											  		<div class="ocps-col s9 "><a class="ocps-hover-able" href="quan_ly_tochuc_con.html">BCT_QT2</a></div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Tên tổ chức</b></div>
-											  		<div class="ocps-col s9">Quy trình thông báo tập trung kinh tế</div>
+											  		<div class="ocps-col s9"><a class="ocps-hover-able" href="quan_ly_tochuc_con.html">Bộ công thương</a></div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Quản lý nhân viên</b></div>
@@ -259,39 +324,56 @@
 											  			<i class="material-icons ocps-xlarge">people_outline</i>
 											  		</div>
 										  		</div>
+										  		
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Tổ chức trực thuộc</b></div>
+											  		<div class="ocps-col s9">
+											  			<i>4 Tổ chức trực thuộc</i> 
+											  		</div>
+										  		</div>
+										  		
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Cán bộ trực thuộc</b></div>
+											  		<div class="ocps-col s9">
+											  			<i>5 Cán bộ trực thuộc</i>
+											  		</div>
+										  		</div>
 											  </td>
 											  
 											  <td>
 											  
 											  	<div class="ocps-row">
-										  		<a href="#" class="ocps-btn ocps-blue ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add">
-										  			<i class="material-icons ocps-xlarge">add_circle_outline</i>
-									  			</a>
-									  			</div>
-										  		
-										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
 										  			<i class="material-icons ocps-xlarge">edit</i>
 									  			</a>
 									  			</div>
+											  
+											  	<div class="ocps-row">
+										  		<a href="#" class="ocps-btn ocps-green ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add Tổ chức con">
+										  			<i class="material-icons ocps-xlarge">add</i>
+									  			</a>
+									  			</div>
+										  		
+										  		
 										  		
 										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
-										  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
+										  			<i class="material-icons ocps-xlarge">delete_forever</i>
 										  		</a>
 										  		</div>
 											  </td> 
 											</tr>
+											
 											<tr>
-											  <td>1</td>
+											  <td>5</td>
 											  <td>
 											  	<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Mã tổ chức</b></div>
-											  		<div class="ocps-col s9 ">BCT_QT2</div>
+											  		<div class="ocps-col s9 "><a href="quan_ly_tochuc_con.html">BCT_QT2</a></div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Tên tổ chức</b></div>
-											  		<div class="ocps-col s9">Quy trình thông báo tập trung kinh tế</div>
+											  		<div class="ocps-col s9"><a href="quan_ly_tochuc_con.html">Bộ công thương</a></div>
 										  		</div>
 										  		<div class="ocps-row ocps-margin-bottom-10">
 											  		<div class="ocps-col s3 "><b>Quản lý nhân viên</b></div>
@@ -300,29 +382,47 @@
 											  			<i class="material-icons ocps-xlarge">people_outline</i>
 											  		</div>
 										  		</div>
+										  		
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Tổ chức trực thuộc</b></div>
+											  		<div class="ocps-col s9">
+											  			<i>4 Tổ chức trực thuộc</i> 
+											  		</div>
+										  		</div>
+										  		
+										  		<div class="ocps-row ocps-margin-bottom-10">
+											  		<div class="ocps-col s3 "><b>Cán bộ trực thuộc</b></div>
+											  		<div class="ocps-col s9">
+											  			<i>5 Cán bộ trực thuộc</i>
+											  		</div>
+										  		</div>
 											  </td>
 											  
 											  <td>
 											  
 											  	<div class="ocps-row">
-										  		<a href="#" class="ocps-btn ocps-blue ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add">
-										  			<i class="material-icons ocps-xlarge">add_circle_outline</i>
-									  			</a>
-									  			</div>
-										  		
-										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
 										  			<i class="material-icons ocps-xlarge">edit</i>
 									  			</a>
 									  			</div>
+											  
+											  	<div class="ocps-row">
+										  		<a href="#" class="ocps-btn ocps-green ocps-margin-top-10 ocps-ripple ocps-round-small" title="Add Tổ chức con">
+										  			<i class="material-icons ocps-xlarge">add</i>
+									  			</a>
+									  			</div>
+										  		
+										  		
 										  		
 										  		<div class="ocps-row">
 										  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
-										  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
+										  			<i class="material-icons ocps-xlarge">delete_forever</i>
 										  		</a>
 										  		</div>
 											  </td> 
 											</tr>
+											
+											
 										</table>
 									</div>
 									<div class="ocps-row ocps-margin-top-10">

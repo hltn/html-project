@@ -41,7 +41,7 @@
 						      <a href="quan_ly_thu_tuc.html">Quản lý Thủ tục</a>
 						      <a href="quan_ly_canbo.html">Quản lý cán bộ</a>
 						      <a href="quy_trinh.html">Quy trình</a>
-						      <a href="quan_ly_congdan_tochuc.html">Quản lý công dân, tổ chức</a>
+						      <a href="quan_ly_congdan_tochuc.html">Quan ly cong dan, to chuc</a>
 						      <a href="thanhtoan.html">Cấu hình thanh toán</a>
 						    </div>
 						  </div>  
@@ -82,199 +82,114 @@
 							
 						</div>
 					</div>
+					
+					
 					<div class="ocps-row">
 							
 								<div class="ocps-container ocps-border ocps-white ocps-margin-left-10 ocps-margin-right-10 ocps-margin-top-10">
-								
+									<div class="ocps-row ocps-border-bottom ocps-display-type">
+									  	<div class="ocps-col m3 tablink ocps-padding-top-10">
+									  		<a href="edit_mau_ho_so.html" class="ocps-display-block"><h3>Cập nhật hồ sơ</h3></a>
+								  		</div> 
+									    <div class="ocps-col m3 tablink  ocps-padding-top-10">
+									    	<a href="list_thanh_phan_ho_so.html" class="ocps-display-block"><h3>Danh sách thành phần hồ sơ</h3></a>
+								    	</div>	
+									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10  ocps-border-red">
+									    	<a href="list_thu_tuc_cap3.html" class="ocps-display-block"><h3>Lien ket dich vu cong</h3></a>
+									    </div>
+									</div>
+									
+									<h2 class="ocps-border-bottom ocps-margin-top-35">Lien ket dich vu cong</h2>
 									<div class="ocps-row">
-									  <a href="danh_muc.html">
-									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10 ocps-border-red"><h3>Danh mục</h3></div>
-									  </a>
-									  <a href="nhom_danh_muc.html">
-									    <div class="ocps-col m3 tablink ocps-bottombar ocps-padding-top-10 "><h3>Nhóm danh mục</h3></div>
-									  </a>
+										<a class="ocps-btn-floating ocps-theme" title="Chon DVC"><i class="material-icons">link</i></a>
 									</div>
 									
-									<h2 class="ocps-border-bottom ocps-margin-top-35">Danh mục</h2>
-									
-									<div class="ocps-border-bottom ocps-padding-bottom-35">
-										<div class="ocps-row-padding ocps-margin-top-35">
-											<div class="ocps-third">
-												<select class="ocps-select ocps-border ocps-white" name="option">
-												  <option disabled selected>Chọn Nhóm danh mục</option>
-												  <option value="1">Danh mục các đơn vị hành chính 3 cấp tinh, huyện, xã</option>
-												  <option value="2">Cấp quản lý TTHC</option>
-												  <option value="3">Loại hình tổ chức doanh nghiệp</option>
-												</select>
-											</div>
-											
-											<div class="ocps-third">
-												<input class="ocps-input ocps-border" type="text" placeholder="Tên,Mã Danh mục">
-											</div>
-										</div>
-										<div class="ocps-row-padding ocps-margin-top-35">
-											<button class="ocps-btn ocps-theme ocps-large"><i class="material-icons">search</i>Search</button>
-										</div>
-										
-									</div>	
-									
-									<div class="ocps-row ocps-margin-top-35">
-										<a class="ocps-btn-floating ocps-theme" title="Thêm Danh mục"><i class="material-icons">add</i></a>
-									</div>
 									<div class="ocps-responsive ocps-margin-top-10">
 										<table class="ocps-table ocps-striped">
 											<col style="width:5%">
-											<col style="width:5%">
-									        <col style="width:10%">
-									        <col style="width:20%">
-									        <col style="width:20%">
-									        <col style="width:10%">
-									        <col style="width:10%">
-									        <col style="width:10%">
+									        <col style="width:35%">
+									        <col style="width:25%">
+									        <col style="width:25%">
 									        <col style="width:10%">
 									        <thead>
-									        	<th>STT</th>
-									        	<th>Định danh</th>
-									        	<th>Mã</th>
-									        	<th>Tên</th>
-									        	<th>Mô tả</th>
-									        	<th>Ngày tạo</th>
-									        	<th>Ngày sửa</th>
-									        	<th>Tác giả</th>
-									        	<th>Hành động</th>
+									        	<tr>
+									        		<th>STT</th>
+									        		<th>Tên thủ tục</th>
+									        		<th>Lĩnh vực</th>
+									        		<th>Cơ quan thực hiện</th>
+									        		<th></th>
+									        	</tr>
 									        </thead>
-									        
 									        <tbody>
 												<tr>
 												  <td>1</td>
-												  <td>4</td>
-												  <td>ADMINISTRATIVE_REGION</td>
-												  <td>Danh mục các đơn vị hành chính 3 cấp tinh, huyện, xã</td>
-												  <td>Danh mục các đơn vị hành chính 3 cấp tinh, huyện, xã</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>Admin QA</td>
+												  <td>Cấp lại Chứng chỉ an toàn cho các doanh nghiệp kinh doanh vận tải đường sắt</td>
+												  <td>Xúc tiến thương mại</td>
+												  <td>Cục ATTP</td>
 												  <td>
-												  
-											  		
 											  		<div class="ocps-row">
-											  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
-											  			<i class="material-icons ocps-xlarge">edit</i>
-										  			</a>
-										  			</div>
-											  		
-											  		<div class="ocps-row">
-											  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
+											  		<a href="#" class="ocps-btn ocps-amber ocps-margin-top-10 ocps-ripple ocps-round-small" title="Remove">
 											  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
 											  		</a>
 											  		</div>
-												  </td>  
+												  </td> 
 												</tr>
 												
 												<tr>
 												  <td>2</td>
-												  <td>4</td>
-												  <td>ADMINISTRATIVE_REGION</td>
-												  <td>Danh mục các đơn vị hành chính 3 cấp tinh, huyện, xã</td>
-												  <td>Danh mục các đơn vị hành chính 3 cấp tinh, huyện, xã</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>Admin QA</td>
+												  <td>Cấp lại Chứng chỉ an toàn cho các doanh nghiệp kinh doanh vận tải đường sắt</td>
+												  <td>Xúc tiến thương mại</td>
+												  <td>Cục ATTP</td>
 												  <td>
-												  
-											  		
 											  		<div class="ocps-row">
-											  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
-											  			<i class="material-icons ocps-xlarge">edit</i>
-										  			</a>
-										  			</div>
-											  		
-											  		<div class="ocps-row">
-											  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
+											  		<a href="#" class="ocps-btn ocps-amber ocps-margin-top-10 ocps-ripple ocps-round-small" title="Remove">
 											  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
 											  		</a>
 											  		</div>
-												  </td>  
+												  </td> 
 												</tr>
 												
 												<tr>
 												  <td>3</td>
-												  <td>4</td>
-												  <td>ADMINISTRATIVE_REGION</td>
-												  <td>Danh mục các đơn vị hành chính 3 cấp tinh, huyện, xã</td>
-												  <td>Danh mục các đơn vị hành chính 3 cấp tinh, huyện, xã</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>Admin QA</td>
+												  <td>Cấp lại Chứng chỉ an toàn cho các doanh nghiệp kinh doanh vận tải đường sắt</td>
+												  <td>Xúc tiến thương mại</td>
+												  <td>Cục ATTP</td>
 												  <td>
-												  
-											  		
 											  		<div class="ocps-row">
-											  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
-											  			<i class="material-icons ocps-xlarge">edit</i>
-										  			</a>
-										  			</div>
-											  		
-											  		<div class="ocps-row">
-											  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
+											  		<a href="#" class="ocps-btn ocps-amber ocps-margin-top-10 ocps-ripple ocps-round-small" title="Remove">
 											  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
 											  		</a>
 											  		</div>
-												  </td>    
+												  </td> 
 												</tr>
 												
 												<tr>
 												  <td>4</td>
-												  <td>4</td>
-												  <td>ADMINISTRATIVE_REGION</td>
-												  <td>Danh mục các đơn vị hành chính 3 cấp tinh, huyện, xã</td>
-												  <td>Danh mục các đơn vị hành chính 3 cấp tinh, huyện, xã</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>Admin QA</td>
+												  <td>Cấp lại Chứng chỉ an toàn cho các doanh nghiệp kinh doanh vận tải đường sắt</td>
+												  <td>Xúc tiến thương mại</td>
+												  <td>Cục ATTP</td>
 												  <td>
-												  
-											  		
 											  		<div class="ocps-row">
-											  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
-											  			<i class="material-icons ocps-xlarge">edit</i>
-										  			</a>
-										  			</div>
-											  		
-											  		<div class="ocps-row">
-											  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
+											  		<a href="#" class="ocps-btn ocps-amber ocps-margin-top-10 ocps-ripple ocps-round-small" title="Remove">
 											  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
 											  		</a>
 											  		</div>
-												  </td>   
+												  </td> 
 												</tr>
 												
 												<tr>
 												  <td>5</td>
-												  <td>4</td>
-												  <td>ADMINISTRATIVE_REGION</td>
-												  <td>Danh mục các đơn vị hành chính 3 cấp tinh, huyện, xã</td>
-												  <td>Danh mục các đơn vị hành chính 3 cấp tinh, huyện, xã</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>01/01/2016 00:00:00</td>
-												  <td>Admin QA</td>
+												  <td>Cấp lại Chứng chỉ an toàn cho các doanh nghiệp kinh doanh vận tải đường sắt</td>
+												  <td>Xúc tiến thương mại</td>
+												  <td>Cục ATTP</td>
 												  <td>
-												  
-											  		
 											  		<div class="ocps-row">
-											  		<a href="#" class="ocps-btn ocps-yellow ocps-margin-top-10 ocps-ripple ocps-round-small" title="Edit">
-											  			<i class="material-icons ocps-xlarge">edit</i>
-										  			</a>
-										  			</div>
-											  		
-											  		<div class="ocps-row">
-											  		<a href="#" class="ocps-btn ocps-red ocps-margin-top-10 ocps-ripple ocps-round-small" title="Delete">
+											  		<a href="#" class="ocps-btn ocps-amber ocps-margin-top-10 ocps-ripple ocps-round-small" title="Remove">
 											  			<i class="material-icons ocps-xlarge">remove_circle_outline</i>
 											  		</a>
 											  		</div>
-												  </td>   
+												  </td> 
 												</tr>
-												
 											</tbody>
 										</table>
 									</div>
