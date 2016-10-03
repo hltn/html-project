@@ -1,11 +1,8 @@
 $(document).ready(function(){
-
-
-	
 	
 	var accordions = $(".ocps-accordion-toogle").get();
 	var i;
-	console.log(accordions.length)
+	//console.log(accordions.length)
 	for (i = 0; i < accordions.length; i++) {
 		accordions[i].onclick = function(){
 			$(this).parent().next().slideToggle(500);
@@ -42,6 +39,21 @@ function ocps_toogleNavBar(id) {
         x.className = x.className.replace(" ocps-show", "");
     }
 }
+
+function ocps_openTabs(event,tabName) {
+	
+	  $(".tab").hide();
+	  $("ul .tablink").removeClass("ocps-rightbar ocps-border-red");
+	  
+	  $("#"+tabName).fadeIn(1000);
+	 
+	  event.currentTarget.parentElement.className += " ocps-rightbar ocps-border-red";
+	
+}
+
+
+
+
 
 function confirm_delete(){
 	return confirm('This action will cannot restore. Are you sure?');
