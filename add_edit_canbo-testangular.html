@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/ocps.css">
+<script src="js/main.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<body style="background-color: #e9ebee">
+	
+			
+	<nav class="ocps-sidenav ocps-collapse" style="width:73px;position: fixed!important;border-right: 1px solid #ececec;background-color: #f8f8f8;">
+		<a href="#" class="ocps-padding-16"><i class="material-icons ocps-xxlarge">home</i></a>
+		<a href="#" class="ocps-padding-16"><i class="material-icons ocps-xxlarge">account_circle</i></a>
+		<a href="#" class="ocps-padding-16"><i class="fa fa-sign-out ocps-xxlarge"></i></a>	
+	</nav>
+	
+	<div class="ocps-main" style="margin-left:73px">
+	<div>
+		<div class="ocps-row">
+			<div class="ocps-container ocps-theme">
+				<span class="ocps-opennav ocps-xlarge ocps-hide-large" onclick="ocps_open_sidenav()">&#9776;</span>
+				<a class="logo" href="index1.html"><h1>Logo</h1></a>
+			</div>
+		</div>
+		<div class="ocps-row ocps-margin-top-10">
+			<div class="ocps-col m2">
+					
+					<nav class="ocps-sidenav ocps-collapse ocps-white ocps-border ocps-animate-left" id="mySidenav">
+						
+						  <a href="javascript:void(0)" onclick="ocps_close_sidenav()" class="ocps-closenav ocps-large ocps-hide-large">Close &times;</a>
+						  
+						  <a href="#" class="ocps-padding-16 ocps-theme ocps-large"><i class="fa fa-bar-chart ocps-xlarge"></i>  So do dich vu cong</a>
+						  <a href="cap_quan_ly.html">Quản lý dịch vụ công cấp 2</a>   
+						  <div class="ocps-accordion ocps-medium">
+						    <a onclick="ocps_toogleNavBar('submenu2')" href="#" class="sidenavlink">
+						      Quản lý dịch vụ công cấp 3 <i class="material-icons ocps-display-right">keyboard_arrow_down</i>
+						    </a>
+						    <div id="submenu2" class="ocps-accordion-content ocps-white ">
+						      <a href="quan_ly_thu_tuc.html">Quản lý Thủ tục</a>
+						      <a href="quan_ly_canbo.html">Quản lý cán bộ</a>
+						      <a href="quy_trinh.html">Quy trình</a>
+						      <a href="quan_ly_congdan_tochuc.html">Quan ly cong dan, to chuc</a>
+						      <a href="thanhtoan.html">Cấu hình thanh toán</a>
+						    </div>
+						  </div>  
+					      <a href="danh_muc.html">Quản lý dữ liệu danh mục</a>
+						  <a href="#" class="sidenavlink ocps-medium" >Văn bản pháp quy</a>
+						
+					</nav>
+			</div>
+			<div class="ocps-col m10">
+					<div class="row" style="display:none">
+						<div class="ocps-container ocps-white ocps-border ocps-margin-left-10 ocps-margin-right-10">
+							
+								<ul class="ocps-navbar" >
+								  <li><a href="#">Home</a></li>
+								  <li><a href="#">Link 1</a></li>
+								  <li class="ocps-dropdown-hover">
+								    <a href="#">Dropdown <i class="fa fa-caret-down"></i></a>
+								    <div class="ocps-dropdown-content ocps-white">
+								      <a href="#">Link 1</a>
+								      <a href="#">Link 2</a>
+								      <a href="#">Link 3</a>
+								    </div>
+								  </li>
+								</ul>
+							
+						</div>
+					</div>
+					<div class="ocps-row">
+						<div class="ocps-container ocps-white ocps-border ocps-margin-left-10 ocps-margin-right-10">
+							
+								<ul class="ocps-breadcrumb" >
+								  <li><a href="#">Home</a></li>
+								  <li><a href="#">Level1</a></li>
+								  <li><a href="#">Level2</a></li>
+								  <li>Level3</li>
+								    
+								</ul>
+							
+						</div>
+					</div>
+					<div class="ocps-row">
+							
+						<div class="ocps-container ocps-border ocps-white ocps-margin-left-10 ocps-margin-right-10 ocps-margin-top-10">
+							<h2 class="ocps-border-bottom">CẬP NHẬT THÔNG TIN CÁN BỘ</h2>
+							
+							<div class="ocps-margin-top-10">
+							
+								<form action="form.php">
+									<div class="ocps-row">
+										<div class="ocps-col s3">
+											<ul class="ocps-navbar vertical" >
+												<li class=" ocps-rightbar ocps-border-red tablink">
+													<a href="#" onclick="ocps_openTabs(event,'tab1')">
+														<i></i>
+														<span> Thông tin cá nhân</span>
+														<span class="ocps-modified-notice" style="display:none;"> (Hiệu chỉnh) </span>
+													</a>
+												</li>
+												<li class=" tablink">
+													<a href="#" onclick="ocps_openTabs(event,'tab2')">
+														<i></i>
+														<span> Cơ quan - chức vụ</span>
+														<span class="ocps-modified-notice" style="display:none;"> (Hiệu chỉnh) </span>
+													</a>
+												</li>
+												<li class=" tablink">
+													<a href="#" onclick="ocps_openTabs(event,'tab3')">
+														<i></i>
+														<span> Tài khoản</span>
+														<span class="ocps-modified-notice" style="display:none;"> (Hiệu chỉnh) </span>
+													</a>
+												</li>
+											</ul>
+											
+											<div class="ocps-row-padding ocps-margin-top-10 ocps-margin-bottom-10">
+												<button type="submit" class="ocps-btn ocps-green ocps-tooltip" title="Save">
+												
+												<i class="material-icons">save</i> Save
+												
+												</button>
+												<button type="button" class="ocps-btn ocps-red" title="Cancel"><i class="material-icons">clear</i> cancel</button>
+											</div>
+										</div>
+										<div class="ocps-col s9">
+											<!-- tab1 -->
+											<div id="tab1" class="ocps-container tab">
+											
+												<div class="ocps-row-padding ocps-margin-bottom-10">
+													<div class="ocps-col s6">
+														<input class="ocps-input" type="text" required>
+														<label class="ocps-label ocps-validate">Mã cán bộ</label>
+													</div>
+												</div>
+												
+												<div class="ocps-row-padding ocps-margin-bottom-10">
+													<div class="ocps-col s6">
+														<input class="ocps-input" type="text" required>
+														<label class="ocps-label ocps-validate">Tên đầy đủ</label>
+													</div>
+													
+													<div class="ocps-col s6">
+														<select class="ocps-select ocps-white" name="option" required>
+														  <option value="1"></option>
+														  <option value="1">Nữ</option>
+														  <option value="2">Nam</option>
+														</select>
+														<label class="ocps-label ocps-validate">Giới tính</label>
+													</div>
+												</div>
+											
+												<div class="ocps-row-padding ocps-margin-bottom-10">
+													<div class="ocps-col s6">
+														<input class="ocps-input" type="text">
+														<label class="ocps-label">Ngày sinh</label>
+													</div>
+													
+													<div class="ocps-col s6">
+														<input class="ocps-input" type="email" required>
+														<label class="ocps-label ocps-validate">Địa chỉ thư điện tử - Email </label>
+													</div>
+												</div>
+												
+												<div class="ocps-row-padding ocps-margin-bottom-10">
+													<div class="ocps-col s6">
+														<input class="ocps-input" type="text">
+														<label class="ocps-label">Số di động</label>
+													</div>
+													
+													<div class="ocps-col s6">
+														<input class="ocps-input" type="text">
+														<label class="ocps-label">Số cố định</label>
+													</div>
+												</div>
+												
+											</div>
+											<!-- tab2 -->
+											<div id="tab2" class="ocps-container tab" style="display:none;" ng-app="myAutoField" ng-controller="AutoFieldController">
+											
+												<div class="ocps-row-padding ocps-margin-bottom-10">
+													<div class="ocps-col s12">
+														<select class="ocps-select ocps-border ocps-white" name="option" required>
+														  <option value="1">Bộ công thương</option>
+														  <option value="2">Cục Đăng kiểm Việt Nam - Phòng VAQ</option>
+														  <option value="3">Cục đường sắt</option>
+														</select>
+														<label class="ocps-label ocps-validate">Cơ quan công tác</label>
+													</div>
+												</div>
+												
+												<div class="ocps-row-padding ocps-margin-bottom-10">
+													<input class="ocps-check" type="checkbox">
+													<label class="ocps-label ocps-validate">Đang công tác</label>
+												</div>
+												
+												<div class="ocps-row-padding ocps-margin-bottom-10">
+													
+													<div class="ocps-col s6">
+														<select class="ocps-select ocps-border ocps-white" name="option" required>
+														  <option value="1" disabled>Chọn đơn vị công tác</option>
+														  <option value="2">Cục Đăng kiểm Việt Nam - Phòng VAQ</option>
+														  <option value="3">Cục đường sắt</option>
+														</select>
+														
+													</div>
+													<div class="ocps-col s6">
+														
+														<select class="ocps-select ocps-border ocps-white" name="option" required>
+														  <option value="1" disabled>Chọn vị trí công việc</option>
+														  <option value="2">Cán bộ tiếp nhận</option>
+														  <option value="3">Cán bộ soát xét</option>
+														</select>
+														
+													</div>
+													<label class="ocps-label ocps-validate">Chức vụ đảm nhiệm chính</label>
+												</div>
+												
+												<div class="ocps-row-padding ocps-margin-bottom-10" ng-repeat="x in products">
+													
+														<div class="ocps-col s6">
+															<select class="ocps-select ocps-border ocps-white" name="option" required>
+															  <option value="1" disabled>Chọn đơn vị công tác</option>
+															  <option value="2">Cục Đăng kiểm Việt Nam - Phòng VAQ</option>
+															  <option value="3">Cục đường sắt</option>
+															</select>
+															
+														</div>
+														<div class="ocps-col s6">
+															
+															<select class="ocps-select ocps-border ocps-white" name="option" required>
+															  <option value="1" disabled>Chọn vị trí công việc</option>
+															  <option value="2">Cán bộ tiếp nhận</option>
+															  <option value="3">Cán bộ soát xét</option>
+															</select>
+															
+														</div>
+													<label class="ocps-label ocps-validate">Chức vụ đảm nhiệm khác</label>
+												</div>
+									
+											</div>
+											<!-- tab3 -->
+											<div id="tab3" class="ocps-container tab" style="display:none;">
+											
+												<div class="ocps-row-padding ocps-margin-bottom-10">
+													<input class="ocps-check" type="checkbox">
+													<label class="ocps-label ocps-validate">Đã cấp tài khoản</label>
+												</div>
+												
+												<div class="ocps-row-padding ocps-margin-bottom-10">
+													<div class="ocps-col s6">
+														<input class="ocps-input" type="text">
+														<label class="ocps-label">Tên hiển thị</label>
+													</div>
+													
+													<div class="ocps-col s6">
+														<input class="ocps-input" type="text">
+														<label class="ocps-label">Địa chỉ thư điện tử</label>
+													</div>
+												</div>
+												
+												<div class="ocps-row-padding ocps-margin-bottom-10">
+													<div class="ocps-col s6">
+														<input class="ocps-input" type="text">
+														<label class="ocps-label">Mật khẩu</label>
+													</div>
+													
+													<div class="ocps-col s6">
+														<input class="ocps-input" type="text">
+														<label class="ocps-label">Nhập lại mật khẩu</label>
+													</div>
+												</div>
+												
+												
+											</div>
+										</div>
+									</div>
+								</form>
+								
+							</div>
+							
+						</div>
+					</div>
+					
+			</div>
+		</div>
+		<footer class="ocps-margin-top-10">
+			<div class="ocps-container ocps-theme ocps-footer-container">
+				<div class="ocps-row">
+					<div class="ocps-col m3 footer-logo ocps-margin-top">
+						<p>Copyright © 2016 - OpenCPS v1.5</p>
+					</div>
+					<div class="ocps-col m2 ocps-margin-left">
+						<div class="ocps-container"><h5>DANH MỤC</h5></div>
+						<ul class="ocps-ul">
+							<li>TRANG CHỦ</li>
+							<li>Thủ tục hành chính</li>
+							<li>Tiếp nhận hồ sơ</li>
+						</ul>
+					</div>
+					<div class="ocps-col m2 ocps-margin-left">
+						
+						<div class="ocps-container"><h5>HƯỚNG DẪN</h5></div>
+						<ul class="ocps-ul">
+							<li>Đăng kí tài khoản</li>
+							<li>Đăng nhập hệ thống</li>
+							<li>Nộp hồ sơ trực tuyến</li>
+							<li>Tra cứu kết quả</li>
+							<li>Cán bộ xử lý hồ sơ</li>
+						</ul>
+					</div>
+					<div class="ocps-col m2 ocps-margin-left">
+						
+						<div class="ocps-container"><h5>LIÊN HỆ HỖ TRỢ</h5></div>
+						<ul class="ocps-ul">
+							<li class="ocps-medium"><i class="material-icons ocps-medium">location_on</i>Tòa nhà VAPA, số 2, đường Tôn Thất Thuyết</li>
+							<li class="ocps-medium"><i class="material-icons ocps-medium">mail_outline</i>hotro@opencps.vn</li>
+							<li class="ocps-medium"><i class="material-icons ocps-medium">local_phone</i>1900 0311</li>
+						</ul>
+					</div>
+					<div class="ocps-col m2 ocps-margin-left">
+						
+						<div class="ocps-container"><h5>LIÊN KẾT WEBSITE</h5></div>
+						<select class="ocps-select ocps-border" name="option">
+						  <option value="" disabled selected>Choose your option</option>
+						  <option value="1">Option 1</option>
+						  <option value="2">Option 2</option>
+						  <option value="3">Option 3</option>
+						</select>
+					</div>
+					
+				</div>
+			</div>
+		</footer>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	var appAutoField = angular.module("myAutoField",[]);
+	
+	appAutoField.controller("AutoFieldController",function($scope){
+		$scope.products = ["Milk","Bread","Cheese"];
+	});
+</script>

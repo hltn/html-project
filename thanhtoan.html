@@ -89,7 +89,14 @@
 									
 									<div class="ocps-margin-top-10">
 									
-										<form class="ocps-container" action="form.php">
+										<form class="ocps-container" 
+										action="form.php" 
+										ng-app="myAppForm" 
+										ng-controller="formCtrl" 
+										name="myForm"
+										ng-submit="form.submit(myAppForm.$valid)"
+      									ng-class="{ loading:form.submitting }"
+										>
 										
 											<div class="ocps-row-padding">
 												<div class="ocps-col s6">
@@ -105,12 +112,20 @@
 											
 											<div class="ocps-row-padding">
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Tài khoản ngân hàng</label>
+													<input class="ocps-input" type="number" ng-model="bankInfo" name="_bankInfo" required
+													placeholder="Tài khoản ngân hàng">
+													<label class="ocps-label ocps-text-red" ng-show="myForm._bankInfo.$invalid">
+													Tài khoản ngân hàng khong duoc de trong</label>
+													<label class="ocps-label" ng-show="myForm._bankInfo.$valid">
+													Tài khoản ngân hàng</label>
 												</div>
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Địa chỉ thanh toán</label>
+													<input class="ocps-input" type="text" ng-model="placeInfo" name="_placeInfo" required
+													placeholder="Địa chỉ thanh toán">
+													<label class="ocps-label ocps-text-red" ng-show="myForm._placeInfo.$invalid">
+													Địa chỉ thanh toán khong duoc de trong</label>
+													<label class="ocps-label" ng-show="myForm._placeInfo.$valid">
+													Địa chỉ thanh toán</label>
 												</div>
 											</div>
 											
@@ -120,23 +135,41 @@
 											
 											<div class="ocps-row-padding">
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Địa chỉ miền</label>
+													<input class="ocps-input" type="text" ng-model="keypayDomain" name="_keypayDomain" required
+													placeholder="Địa chỉ miền">
+													<label class="ocps-label ocps-text-red" ng-show="myForm._keypayDomain.$invalid">
+													Địa chỉ miền khong duoc de trong</label>
+													<label class="ocps-label" ng-show="myForm._keypayDomain.$valid">
+													Địa chỉ miền</label>
 												</div>
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Phiên bản </label>
+													<input class="ocps-input" type="number" name="_keypayVersion" ng-model="keypayVersion" required
+													placeholder="Phiên bản">
+													<label class="ocps-label ocps-text-red" ng-show="myForm._keypayVersion.$invalid">
+													Phiên bản khong duoc de trong</label>
+													<label class="ocps-label" ng-show="myForm._keypayVersion.$valid">
+													Phiên bản</label>
 												</div>
 											</div>
 											
 											<div class="ocps-row-padding">
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
+													<input class="ocps-input" type="text" name="_keypayMerchantCode" ng-model="keypayMerchantCode" required
+													placeholder="Mã đại lý">
 													<label class="ocps-label ocps-validate">Mã đại lý</label>
+													<label class="ocps-label ocps-text-red" ng-show="myForm._keypayMerchantCode.$invalid">
+													Mã đại lý khong duoc de trong</label>
+													<label class="ocps-label" ng-show="myForm._keypayMerchantCode.$valid">
+													Mã đại lý</label>
 												</div>
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
+													<input class="ocps-input" type="text" name="_keypaySecureKey" ng-model="keypaySecureKey" required 
+													placeholder="Mã bảo mật">
 													<label class="ocps-label ocps-validate">Mã bảo mật</label>
+													<label class="ocps-label ocps-text-red" ng-show="myForm._keypaySecureKey.$invalid">
+													Mã bảo mật khong duoc de trong</label>
+													<label class="ocps-label" ng-show="myForm._keypaySecureKey.$valid">
+													Mã bảo mật</label>
 												</div>
 											</div>
 											
@@ -146,29 +179,45 @@
 											
 											<div class="ocps-row-padding">
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Mã số thuế</label>
+													<input class="ocps-input" type="text" name="_govAgencyTaxNo" ng-model="govAgencyTaxNo" required
+													placeholder="Mã số thuế">
+													<label class="ocps-label ocps-text-red" ng-show="myForm._govAgencyTaxNo.$invalid">
+													Mã số thuế khong duoc de trong</label>
+													<label class="ocps-label" ng-show="myForm._govAgencyTaxNo.$valid">
+													Mã số thuế</label>
 												</div>
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text"  required>
-													<label class="ocps-label ocps-validate">Mẫu số </label>
+													<input class="ocps-input" type="text" name="_invoiceTemplateNo" ng-model="invoiceTemplateNo"  required
+													placeholder="Mẫu số">
+													<label class="ocps-label ocps-text-red" ng-show="myForm._invoiceTemplateNo.$invalid">
+													Mẫu số khong duoc de trong</label>
+													<label class="ocps-label" ng-show="myForm._invoiceTemplateNo.$valid">
+													Mẫu số</label>
 												</div>
 											</div>
 											
 											<div class="ocps-row-padding">
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Kí hiệu</label>
+													<input class="ocps-input" type="text" name="_invoiceIssueNo" ng-model="invoiceIssueNo" required
+													placeholder="Kí hiệu">
+													<label class="ocps-label ocps-text-red" ng-show="myForm._invoiceIssueNo.$invalid">
+													Kí hiệu khong duoc de trong</label>
+													<label class="ocps-label" ng-show="myForm._invoiceIssueNo.$valid">
+													Kí hiệu</label>
 												</div>
 												<div class="ocps-col s6">
-													<input class="ocps-input" type="text" required>
-													<label class="ocps-label ocps-validate">Số thứ tự</label>
+													<input class="ocps-input" type="number" name="_invoiceLastNo" ng-model="invoiceLastNo" required
+													placeholder="Số thứ tự">
+													<label class="ocps-label ocps-text-red" ng-show="myForm._invoiceLastNo.$invalid">
+													Số thứ tự khong duoc de trong</label>
+													<label class="ocps-label" ng-show="myForm._invoiceLastNo.$valid">
+													Số thứ tự</label>
 												</div>
 											</div>
 											
 											<div class="ocps-row-padding">
 												<div class="ocps-col s12">
-													<textarea class="ocps-input" rows="10"></textarea>
+													<textarea class="ocps-input" rows="10" name="_reportTemplate" ng-model="reportTemplate"></textarea>
 													<label class="ocps-label">Mẫu in biên lai</label>
 													
 												</div>
@@ -176,8 +225,10 @@
 											</div>
 											
 											<div class="ocps-row-padding ocps-margin-top-10 ocps-margin-bottom-10">
-												<button type="button" class="ocps-btn ocps-theme"><i class="material-icons">pageview</i> Xem trước mẫu in biên lai</button>
-												<button type="submit" class="ocps-btn ocps-theme"><i class="material-icons">save</i> Save</button>
+												<button type="button" class="ocps-btn ocps-theme" ng-disabled="incomplete"><i class="material-icons">pageview</i> Xem trước mẫu in biên lai</button>
+												<button type="submit" class="ocps-btn ocps-theme" ng-disabled="myForm.$invalid">
+													<i class="material-icons">save</i> Save
+												</button>
 											</div>
 										
 										</form>
@@ -240,3 +291,21 @@
 		</div>
 	</div>
 </body>
+<script>
+	var app = angular.module('myAppForm', []);
+	app.controller('formCtrl',function($scope){
+		
+		$scope.reportTemplate = "";
+		$scope.incomplete = true;
+		
+		$scope.$watch('reportTemplate',function() {$scope.testValidation();});
+		
+		$scope.testValidation = function(){
+
+		  if ($scope.reportTemplate.length)
+		  {
+		     $scope.incomplete = false;
+		  }
+		};
+	});
+</script>
