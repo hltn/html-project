@@ -114,10 +114,10 @@
 												<div class="ocps-col s6">
 													<input class="ocps-input" type="number" ng-model="bankInfo" name="_bankInfo" required
 													placeholder="Tài khoản ngân hàng">
-													<label class="ocps-label ocps-text-red" ng-show="myForm._bankInfo.$invalid">
-													Tài khoản ngân hàng khong duoc de trong</label>
-													<label class="ocps-label" ng-show="myForm._bankInfo.$valid">
+													<label class="ocps-label " ng-class="{ocps_text_red:myForm._bankInfo.$invalid}">
 													Tài khoản ngân hàng</label>
+<!-- 													<label class="ocps-label" ng-show="myForm._bankInfo.$valid"> -->
+<!-- 													Tài khoản ngân hàng</label> -->
 												</div>
 												<div class="ocps-col s6">
 													<input class="ocps-input" type="text" ng-model="placeInfo" name="_placeInfo" required
