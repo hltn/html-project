@@ -1,89 +1,37 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Untitled Document</title>
-<style type="text/css">
-html, body {
-	margin:0;
-	padding:0;
-	height:100%
-}
-h1, p { margin:0 0 1em }
-#header, #footer {
-	position:fixed;
-	width:100%;
-	left:0;
-	top:0;
-	background:red;
-	height:100px;
-	opacity:0.7;
-}
-#footer {
-	bottom:0;
-	top:auto;
-}
-#content {
-	position:absolute;
-	top:100px;
-	bottom:100px;
-	width:100%;
-	background:#fcf;
-	overflow:auto;
-}
-</style>
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="js/autofields.js"></script>
+<script>
+angular.module('app',['autofields'])
+.controller('JoinCtrl', ['$scope', function ($scope) {
+    $scope.user = {
+        username: '',
+        password: '',
+        confirmPassword: '',
+    };
+
+    $scope.schema = [
+        { property: 'username', type: 'text', attr: { ngMinlength: 4, required: true }, msgs: {minlength: 'Needs to have at least 4 characters'} },
+        { property: 'password', type: 'password', attr: { required: true } },
+        { property: 'confirmPassword', label: 'Confirm Password', type: 'password', attr: { confirmPassword: 'user.password', required: true } }
+    ];
+
+    $scope.join = function(){
+        if(!$scope.joinForm.$valid) return;
+        //join stuff....
+    }
+}]);
+</script>
 
 <body>
-<div id="header">
-		<h1>Header</h1>
-</div>
-<div id="content">
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-		<p>scrolling content</p>
-</div>
-<div id="footer">
-		<p>footer</p>
-</div>
+
+ <form name="joinForm" ng-submit="join()">
+    <auto:fields fields="schema" data="user"></auto:fields>
+    <button type="submit" class="btn btn-default btn-lg btn-block" ng-class="{'btn-primary':joinForm.$valid}">Join</button>
+</form>
+
 </body>
-</html>
+
+

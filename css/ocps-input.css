@@ -20,4 +20,8 @@ input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-sea
 .ocps-select select:focus{color:#000;border:1px solid #009688}.ocps-select option[disabled]{color:#009688}
 
 /*Valid*/
-.ocps-label{color:#009688}.ocps-input:not(:valid)~.ocps-validate{color:#f44336}
+.ocps-label{
+/* 	color:#009688; */
+	color:#333;
+	font-weight:600;
+}.ocps-input:not(:valid)~.ocps-validate{color:#f44336}

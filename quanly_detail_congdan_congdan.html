@@ -85,11 +85,23 @@
 					<div class="ocps-row">
 							
 						<div class="ocps-container ocps-border ocps-white ocps-margin-left-10 ocps-margin-right-10 ocps-margin-top-10">
-							<h2 class="ocps-border-bottom">CẬP NHẬT THÔNG TIN CÁN BỘ</h2>
+							<h3 class="ocps-border-bottom">
+								<a href="quan_ly_congdan_congdan.html">
+									<i class="material-icons ocps-hover-theme">arrow_back</i>
+								</a>
+								<b>CẬP NHẬT THÔNG TIN TÀI KHOẢN</b>
+							</h3>
 							
 							<div class="ocps-margin-top-10">
 							
-								<form action="form.php">
+								<form action="form.php"
+									ng-app="myAppForm" 
+									ng-controller="formCtrl" 
+									name="myForm"
+									ng-submit="form.submit(myAppForm.$valid)"
+     								ng-class="{ loading:form.submitting }"
+								>
+     									
 									<div class="ocps-row">
 										<div class="ocps-col m3">
 											<ul class="ocps-navbar vertical" >
@@ -103,193 +115,165 @@
 												<li class=" tablink">
 													<a href="#" onclick="ocps_openTabs(event,'tab2')">
 														<i></i>
-														<span> Cơ quan - chức vụ</span>
+														<span> Liên hệ</span>
 														<span class="ocps-modified-notice" style="display:none;"> (Hiệu chỉnh) </span>
 													</a>
 												</li>
-												<li class=" tablink">
-													<a href="#" onclick="ocps_openTabs(event,'tab3')">
-														<i></i>
-														<span> Tài khoản</span>
-														<span class="ocps-modified-notice" style="display:none;"> (Hiệu chỉnh) </span>
-													</a>
-												</li>
+												
 											</ul>
 											
-											<div class="ocps-row-padding ocps-margin-top-10 ocps-margin-bottom-10">
-												<button type="submit" class="ocps-btn ocps-green ocps-tooltip" title="Save">
+											<div class="ocps-row-padding ocps-margin-bottom">
+												<button type="submit" class="ocps-btn ocps-green ocps-tooltip ocps-margin-top-10" title="Lưu" ng-disabled="myForm.$invalid">
 												
-												<i class="material-icons">save</i> Save
+												<i class="material-icons">save</i> Lưu
 												
 												</button>
-												<button type="button" class="ocps-btn ocps-red" title="Cancel"><i class="material-icons">clear</i> cancel</button>
+												<button type="button" class="ocps-btn ocps-red ocps-margin-top-10" title="Cancel"><i class="material-icons">clear</i> cancel</button>
 											</div>
 										</div>
 										<div class="ocps-col m9">
 											<!-- tab1 -->
 											<div id="tab1" class="ocps-container tab">
 											
-												<div class="ocps-row-padding ocps-margin-bottom-10">
+												<div class="ocps-row-padding ocps-margin-bottom">
 													<div class="ocps-col m6">
-														<input class="ocps-input" type="text" required>
-														<label class="ocps-label ocps-validate">Mã cán bộ</label>
-													</div>
-												</div>
-												
-												<div class="ocps-row-padding ocps-margin-bottom-10">
-													<div class="ocps-col m6">
-														<input class="ocps-input" type="text" required>
-														<label class="ocps-label ocps-validate">Tên đầy đủ</label>
+														<input class="ocps-input" type="text"  name="_createDate" disabled
+														placeholder="Ngày tạo" value="07/04/2016"/>
+														<label class="ocps-label" >Ngày tạo</label>
 													</div>
 													
 													<div class="ocps-col m6">
-														<select class="ocps-select ocps-white" name="option" required>
-														  <option value="1"></option>
-														  <option value="1">Nữ</option>
-														  <option value="2">Nam</option>
+														<input class="ocps-input" type="text"  name="_account-status" disabled
+														placeholder="Ngày tạo" value="Đăng ký"/>
+														<label class="ocps-label" >Trạng thái tài khoản</label>
+													</div>
+												</div>
+												
+												<div class="ocps-row-padding ocps-margin-bottom">
+													<div class="ocps-col m6">
+														<input class="ocps-input" type="text" ng-model="fullName" name="_fullName" required
+														placeholder="Tên đầy đủ"
+														ng-maxlength="75"
+														/>
+														
+														<label class="ocps-label ocps-text-red" ng-show="myForm._fullName.$error.required">
+														Tên đầy đủ không được để trống</label>
+														<label class="ocps-label ocps-text-red" ng-show="myForm._fullName.$error.maxlength">
+														Tên đầy đủ không được quá 75 kí tự</label>
+														<label class="ocps-label" ng-show="myForm._fullName.$valid">
+														Tên đầy đủ</label>
+													</div>
+													
+													<div class="ocps-col m6">
+														<input class="ocps-input" type="number" ng-model="personalId" name="_personalId"
+														placeholder="Số chứng minh nhân dân"
+														ng-maxlength="20"
+														/>
+														
+														<label class="ocps-label ocps-text-red" ng-show="myForm._personalId.$error.maxlength">
+														Số chứng minh nhân dân không được quá 20 kí tự</label>
+														<label class="ocps-label" ng-show="myForm._personalId.$valid">
+														Số chứng minh nhân dân</label>
+													</div>
+												</div>
+											
+												
+												<div class="ocps-row-padding ocps-margin-bottom">
+													<div class="ocps-col m6">
+														<input class="ocps-input" type="date" ng-model="birthDate" name="_birthDate"
+														placeholder="Ngày sinh"
+														
+														/>
+														<label class="ocps-label" >Ngày sinh</label>
+													</div>
+													
+													<div class="ocps-col m6">
+														
+														<select class="ocps-select ocps-border ocps-white" name="_gender">
+														  <option value="1">Nam</option>
+														  <option value="2">Nữ</option>
 														</select>
 														<label class="ocps-label ocps-validate">Giới tính</label>
 													</div>
 												</div>
-											
-												<div class="ocps-row-padding ocps-margin-bottom-10">
-													<div class="ocps-col m6">
-														<input class="ocps-input" type="text">
-														<label class="ocps-label">Ngày sinh</label>
-													</div>
-													
-													<div class="ocps-col m6">
-														<input class="ocps-input" type="email" required>
-														<label class="ocps-label ocps-validate">Địa chỉ thư điện tử - Email </label>
-													</div>
-												</div>
 												
-												<div class="ocps-row-padding ocps-margin-bottom-10">
-													<div class="ocps-col m6">
-														<input class="ocps-input" type="text">
-														<label class="ocps-label">Số di động</label>
-													</div>
-													
-													<div class="ocps-col m6">
-														<input class="ocps-input" type="text">
-														<label class="ocps-label">Số cố định</label>
-													</div>
-												</div>
+												
 												
 											</div>
 											<!-- tab2 -->
 											<div id="tab2" class="ocps-container tab" style="display:none;">
-											
-												<div class="ocps-row-padding ocps-margin-bottom-10">
-													<div class="ocps-col m12">
-														<select class="ocps-select ocps-border ocps-white" name="option" required>
-														  <option value="1">Bộ công thương</option>
-														  <option value="2">Cục Đăng kiểm Việt Nam - Phòng VAQ</option>
-														  <option value="3">Cục đường sắt</option>
+												<div class="ocps-row-padding ocps-margin-bottom">
+													<div class="ocps-col m4">
+														<label class="ocps-label ocps-validate">Tỉnh/Thành phố</label>
+														<select class="ocps-select ocps-border ocps-white" name="_cityId">
+														  <option value="1">Hà nội</option>
+														  <option value="2">Ninh Bình</option>
+														  <option value="3">Hải Phòng</option>
 														</select>
-														<label class="ocps-label ocps-validate">Cơ quan công tác</label>
+													</div>
+													<div class="ocps-col m4">
+														<label class="ocps-label ocps-validate">Huyện/Quận</label>
+														<select class="ocps-select ocps-border ocps-white" name="_districtId">
+														  <option value="1">Quận Đống Đa</option>
+														  <option value="2">Quận Hồ Tây</option>
+														  <option value="3">Quận Cầu Giấy</option>
+														</select>
+													</div>
+													<div class="ocps-col m4">
+														<label class="ocps-label ocps-validate">Xã/Phường</label>
+														<select class="ocps-select ocps-border ocps-white" name="_wardId">
+														  <option value="1">Xã Khánh Trung</option>
+														  <option value="2">Xã Hải Hậu</option>
+														  <option value="3">Xã Hải Hậu</option>
+														</select>
 													</div>
 												</div>
 												
-												<div class="ocps-row-padding ocps-margin-bottom-10">
-													<div class="ocps-col m12">
-														<input class="ocps-check" type="checkbox">
-														<label class="ocps-label ocps-validate">Đang công tác</label>
+												<div class="ocps-row-padding ocps-margin-bottom">
+													<div class="ocps-col m6">
+														<input class="ocps-input" ng-model="email" name="_email"
+														placeholder="Email"
+														ng-maxlength="75"
+														type="email"
+														/>
+														<label class="ocps-label ocps-text-red" ng-show="myForm._email.$error.maxlength">
+														Email không được quá 75 kí tự</label>
+														<label class="ocps-label ocps-text-red" ng-show="myForm._email.$error.email">
+														Email phải đúng định dạng test@abc</label>
+														<label class="ocps-label" ng-show="myForm._email.$valid">
+														Email</label>
 													</div>
-												</div>
-												
-												<div class="ocps-row-padding ocps-margin-bottom-10">
-													<div class="ocps-col m12">
-														<label class="ocps-label">Chức vụ đảm nhiệm chính</label>
-													</div>
-												</div>
-												
-												<div class="ocps-row-padding ocps-margin-bottom-10">
-													
 													
 													<div class="ocps-col m6">
-														<select class="ocps-select ocps-border ocps-white" name="option" required>
-														  <option value="1" disabled>Chọn đơn vị công tác</option>
-														  <option value="2">Cục Đăng kiểm Việt Nam - Phòng VAQ</option>
-														  <option value="3">Cục đường sắt</option>
-														</select>
+														<input class="ocps-input" type="number" ng-model="telNo" name="_telNo" required
+														placeholder="Số điện thoại"
+														ng-maxlength="10"
+														/>
 														
-													</div>
-													<div class="ocps-col m6">
-														
-														<select class="ocps-select ocps-border ocps-white" name="option" required>
-														  <option value="1" disabled>Chọn vị trí công việc</option>
-														  <option value="2">Cán bộ tiếp nhận</option>
-														  <option value="3">Cán bộ soát xét</option>
-														</select>
-														
-													</div>
-													
-												</div>
-												
-												<div class="ocps-row-padding ocps-margin-bottom-10">
-													<div class="ocps-col m12">
-														<label class="ocps-label">Chức vụ đảm nhiệm khác</label>
+														<label class="ocps-label ocps-text-red" ng-show="myForm._telNo.$error.maxlength">
+														Số điện thoại không được quá 10 kí tự</label>
+														<label class="ocps-label" ng-show="myForm._telNo.$valid">
+														Số điện thoại</label>
 													</div>
 												</div>
 												
-												<div class="ocps-row-padding ocps-margin-bottom-10">
+												<div class="ocps-row-padding ocps-margin-bottom">
+													<div class="ocps-col m6">
+														<input class="ocps-input" type="text" ng-model="address" name="_address"
+														placeholder="Địa chỉ"
+														ng-maxlength="75"
+														/>
+														<label class="ocps-label ocps-text-red" ng-show="myForm._address.$error.maxlength">
+														Địa chỉ không được quá 75 kí tự</label>
+														<label class="ocps-label" ng-show="myForm._address.$valid">
+														Địa chỉ</label>
+													</div>
 													
-													<div class="ocps-col m6">
-														<select class="ocps-select ocps-border ocps-white" name="option" required>
-														  <option value="1" disabled>Chọn đơn vị công tác</option>
-														  <option value="2">Cục Đăng kiểm Việt Nam - Phòng VAQ</option>
-														  <option value="3">Cục đường sắt</option>
-														</select>
-														
-													</div>
-													<div class="ocps-col m6">
-														
-														<select class="ocps-select ocps-border ocps-white" name="option" required>
-														  <option value="1" disabled>Chọn vị trí công việc</option>
-														  <option value="2">Cán bộ tiếp nhận</option>
-														  <option value="3">Cán bộ soát xét</option>
-														</select>
-														
-													</div>
 													
 												</div>
-									
 											</div>
-											<!-- tab3 -->
-											<div id="tab3" class="ocps-container tab" style="display:none;">
 											
-												<div class="ocps-row-padding ocps-margin-bottom-10">
-													<input class="ocps-check" type="checkbox">
-													<label class="ocps-label ocps-validate">Đã cấp tài khoản</label>
-												</div>
-												
-												<div class="ocps-row-padding ocps-margin-bottom-10">
-													<div class="ocps-col m6">
-														<input class="ocps-input" type="text">
-														<label class="ocps-label">Tên hiển thị</label>
-													</div>
-													
-													<div class="ocps-col m6">
-														<input class="ocps-input" type="text">
-														<label class="ocps-label">Địa chỉ thư điện tử</label>
-													</div>
-												</div>
-												
-												<div class="ocps-row-padding ocps-margin-bottom-10">
-													<div class="ocps-col m6">
-														<input class="ocps-input" type="text">
-														<label class="ocps-label">Mật khẩu</label>
-													</div>
-													
-													<div class="ocps-col m6">
-														<input class="ocps-input" type="text">
-														<label class="ocps-label">Nhập lại mật khẩu</label>
-													</div>
-												</div>
-												
-												
-											</div>
+											
 										</div>
 									</div>
 								</form>
@@ -353,6 +337,9 @@
 	</div>
 </body>
 
-<script type="text/javascript">
-	
+<script>
+	var app = angular.module('myAppForm', []);
+	app.controller('formCtrl',function($scope){
+		
+	});
 </script>
