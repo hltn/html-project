@@ -85,7 +85,12 @@
 					<div class="ocps-row">
 							
 								<div class="ocps-container ocps-border ocps-white ocps-margin-left-10 ocps-margin-right-10 ocps-margin-top-10">
-									<h3 class="ocps-border-bottom"><b>CẤU HÌNH THANH TOÁN</b></h3>
+									<h3 class="ocps-border-bottom">
+										<a href="danh_muc.html">
+											<i class="material-icons ocps-hover-theme">arrow_back</i>
+										</a>
+										<b>CẬP NHẬT DANH MỤC</b>
+									</h3>
 									
 									<div class="ocps-margin-top-10">
 									
@@ -100,130 +105,76 @@
 										
 											<div class="ocps-row-padding ocps-margin-bottom">
 												<div class="ocps-col m6">
-													<label>Cơ quan thực hiện</label>
-													<select class="ocps-select ocps-border" name="option" required>
-													  <option value="1">Bộ công thương</option>
-													  <option value="2">Cục Đăng kiểm Việt Nam - Phòng VAQ</option>
-													  <option value="3">Cục đường sắt</option>
+													<input class="ocps-input" type="text"
+													name="_itemCode"
+													placeholder="Mã danh mục" 
+													ng-model="itemCode"
+													ng-maxlength="75" 
+													required
+													>
+													<label class="ocps-label ocps-text-red" ng-show="myForm._itemCode.$error.required">
+													Mã danh mục không được để trống</label>
+													<label class="ocps-label ocps-text-red" ng-show="myForm._itemCode.$error.maxlength">
+													Mã danh mục không được quá 75 kí tự</label>
+													<label class="ocps-label ocps-text-teal" ng-show="myForm._itemCode.$valid">
+													Mã danh mục</label>
+												</div>
+												
+											</div>
+											
+											<div class="ocps-row-padding ocps-margin-bottom">
+												<div class="ocps-col m6">
+													<input class="ocps-input" type="text"
+													name="_itemName"
+													placeholder="Tên danh mục" 
+													ng-model="itemName"
+													ng-maxlength="75" 
+													required
+													>
+													<label class="ocps-label ocps-text-red" ng-show="myForm._itemName.$error.required">
+													Tên danh mục không được để trống</label>
+													<label class="ocps-label ocps-text-red" ng-show="myForm._itemName.$error.maxlength">
+													Tên danh mục không được quá 75 kí tự</label>
+													<label class="ocps-label ocps-text-teal" ng-show="myForm._itemName.$valid">
+													Tên danh mục</label>
+												</div>
+											</div>
+											
+											<div class="ocps-row-padding ocps-margin-bottom">
+												<div class="ocps-col m6">
+													<label>Nhóm danh mục</label>
+													<select class="ocps-select ocps-border" name="_dictCollectionId" >
+													  <option value="1">Loại hình tổ chức doanh nghiệp</option>
+													  <option value="2">Loại hình tổ chức doanh nghiệp</option>
+													  <option value="3">Loại hình tổ chức cá nhân</option>
+													</select>
+												</div>
+											</div>
+											
+											<div class="ocps-row-padding ocps-margin-bottom">
+												<div class="ocps-col m6">
+													<label>Danh mục cha</label>
+													<select class="ocps-select ocps-border" name="_parentItemId">
+													  <option value="1">Công ty cổ phần Hà Phúc</option>
+													  <option value="2">Công ty cổ phần Hồng Hà</option>
+													  <option value="3">Công ty cổ phần A.V.A</option>
+													</select>
+												</div>
+											</div>
+											
+											<div class="ocps-row-padding ocps-margin-bottom">
+												<div class="ocps-col m6">
+													<label>Phiên bản</label>
+													<select class="ocps-select ocps-border" name="_dictVersionId">
+													  <option value="1"></option>
+													  <option value="2"></option>
+													  <option value="3"></option>
 													</select>
 												</div>
 											</div>
 											
 											
-											<div class="ocps-row-padding ocps-margin-bottom">
-												<div class="ocps-col m6">
-													<input class="ocps-input" type="number" ng-model="bankInfo" name="_bankInfo" required
-													placeholder="Tài khoản ngân hàng">
-													<label class="ocps-label " ng-class="{ocps_text_red:myForm._bankInfo.$invalid}">
-													Tài khoản ngân hàng</label>
-<!-- 													<label class="ocps-label" ng-show="myForm._bankInfo.$valid"> -->
-<!-- 													Tài khoản ngân hàng</label> -->
-												</div>
-												<div class="ocps-col m6">
-													<input class="ocps-input" type="text" ng-model="placeInfo" name="_placeInfo" required
-													placeholder="Địa chỉ thanh toán">
-													<label class="ocps-label ocps-text-red" ng-show="myForm._placeInfo.$invalid">
-													Địa chỉ thanh toán không được để trống</label>
-													<label class="ocps-label" ng-show="myForm._placeInfo.$valid">
-													Địa chỉ thanh toán</label>
-												</div>
-											</div>
-											
-											<div class="ocps-panel ocps-light-grey">
-												<h3>Cấu hình thanh toán trực tuyến keypay</h3>
-											</div>
-											
-											<div class="ocps-row-padding ocps-margin-bottom">
-												<div class="ocps-col m6">
-													<input class="ocps-input" type="text" ng-model="keypayDomain" name="_keypayDomain" required
-													placeholder="Địa chỉ miền">
-													<label class="ocps-label ocps-text-red" ng-show="myForm._keypayDomain.$invalid">
-													Địa chỉ miền không được để trống</label>
-													<label class="ocps-label" ng-show="myForm._keypayDomain.$valid">
-													Địa chỉ miền</label>
-												</div>
-												<div class="ocps-col m6">
-													<input class="ocps-input" type="number" name="_keypayVersion" ng-model="keypayVersion" required
-													placeholder="Phiên bản">
-													<label class="ocps-label ocps-text-red" ng-show="myForm._keypayVersion.$invalid">
-													Phiên bản không được để trống</label>
-													<label class="ocps-label" ng-show="myForm._keypayVersion.$valid">
-													Phiên bản</label>
-												</div>
-											</div>
-											
-											<div class="ocps-row-padding ocps-margin-bottom">
-												<div class="ocps-col m6">
-													<input class="ocps-input" type="text" name="_keypayMerchantCode" ng-model="keypayMerchantCode" required
-													placeholder="Mã đại lý">
-													<label class="ocps-label ocps-validate">Mã đại lý</label>
-													<label class="ocps-label ocps-text-red" ng-show="myForm._keypayMerchantCode.$invalid">
-													Mã đại lý không được để trống</label>
-													<label class="ocps-label" ng-show="myForm._keypayMerchantCode.$valid">
-													Mã đại lý</label>
-												</div>
-												<div class="ocps-col m6">
-													<input class="ocps-input" type="text" name="_keypaySecureKey" ng-model="keypaySecureKey" required 
-													placeholder="Mã bảo mật">
-													<label class="ocps-label ocps-validate">Mã bảo mật</label>
-													<label class="ocps-label ocps-text-red" ng-show="myForm._keypaySecureKey.$invalid">
-													Mã bảo mật không được để trống</label>
-													<label class="ocps-label" ng-show="myForm._keypaySecureKey.$valid">
-													Mã bảo mật</label>
-												</div>
-											</div>
-											
-											<div class="ocps-panel ocps-light-grey">
-												<h3>Cấu hình thông tin hóa đơn</h3>
-											</div>
-											
-											<div class="ocps-row-padding ocps-margin-bottom">
-												<div class="ocps-col m6">
-													<input class="ocps-input" type="text" name="_govAgencyTaxNo" ng-model="govAgencyTaxNo" required
-													placeholder="Mã số thuế">
-													<label class="ocps-label ocps-text-red" ng-show="myForm._govAgencyTaxNo.$invalid">
-													Mã số thuế không được để trống</label>
-													<label class="ocps-label" ng-show="myForm._govAgencyTaxNo.$valid">
-													Mã số thuế</label>
-												</div>
-												<div class="ocps-col m6">
-													<input class="ocps-input" type="text" name="_invoiceTemplateNo" ng-model="invoiceTemplateNo"  required
-													placeholder="Mẫu số">
-													<label class="ocps-label ocps-text-red" ng-show="myForm._invoiceTemplateNo.$invalid">
-													Mẫu số không được để trống</label>
-													<label class="ocps-label" ng-show="myForm._invoiceTemplateNo.$valid">
-													Mẫu số</label>
-												</div>
-											</div>
-											
-											<div class="ocps-row-padding ocps-margin-bottom">
-												<div class="ocps-col m6">
-													<input class="ocps-input" type="text" name="_invoiceIssueNo" ng-model="invoiceIssueNo" required
-													placeholder="Kí hiệu">
-													<label class="ocps-label ocps-text-red" ng-show="myForm._invoiceIssueNo.$invalid">
-													Kí hiệu không được để trống</label>
-													<label class="ocps-label" ng-show="myForm._invoiceIssueNo.$valid">
-													Kí hiệu</label>
-												</div>
-												<div class="ocps-col m6">
-													<input class="ocps-input" type="number" name="_invoiceLastNo" ng-model="invoiceLastNo" required
-													placeholder="Số thứ tự">
-													<label class="ocps-label ocps-text-red" ng-show="myForm._invoiceLastNo.$invalid">
-													Số thứ tự không được để trống</label>
-													<label class="ocps-label" ng-show="myForm._invoiceLastNo.$valid">
-													Số thứ tự</label>
-												</div>
-											</div>
-											
-											<div class="ocps-row-padding ocps-margin-bottom">
-												<div class="ocps-col m12">
-													<textarea class="ocps-input" rows="10" name="_reportTemplate" ng-model="reportTemplate"></textarea>
-													<label class="ocps-label">Mẫu in biên lai</label>
-												</div>
-											</div>
-											
 											<div class="ocps-row-padding ocps-margin-top-10 ocps-margin-bottom">
-												<button type="button" class="ocps-btn ocps-theme" ng-disabled="incomplete" ><a href="#"><i class="material-icons">pageview</i> Xem trước mẫu in biên lai</a></button>
 												<button type="submit" class="ocps-btn ocps-theme" ng-disabled="myForm.$invalid">
 													<i class="material-icons">save</i> Lưu
 												</button>
@@ -291,20 +242,8 @@
 	</div>
 </body>
 <script>
-	var app = angular.module('myAppForm', []);
-	app.controller('formCtrl',function($scope){
-		
-		$scope.reportTemplate = "";
-		$scope.incomplete = true;
-		
-		$scope.$watch('reportTemplate',function() {$scope.testValidation();});
-		
-		$scope.testValidation = function(){
-
-		  if ($scope.reportTemplate.length)
-		  {
-		     $scope.incomplete = false;
-		  }
-		};
-	});
+	angular.module('myAppForm', [])
+		.controller('formCtrl',function($scope){
+			
+		});
 </script>
